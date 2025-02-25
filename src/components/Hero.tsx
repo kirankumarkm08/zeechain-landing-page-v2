@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
 import CustomButton from "./Custom-Button";
-import Leftside_Bg from "/public/assets/background-assets/hero_left_bg.svg";
 import Menora_1 from "/public/assets/background-assets/Hero_monera-1.svg";
 import Menora_2 from "/public/assets/background-assets/Hero_monera-2.svg";
 import Eth from "/public/assets/background-assets/Hero_Eth.svg";
