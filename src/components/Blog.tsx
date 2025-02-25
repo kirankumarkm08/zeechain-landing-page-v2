@@ -19,26 +19,26 @@ interface Blog {
 
 const Blog: Blog[] = [
   {
-    label: "How to participate in Governance of Zero Chain",
+    label: "How to participate in Governance of ZeeChain",
     image: Participate,
     description:
-      "Be a part of Zero Chain's future! Vote on proposals, stake your tokens, and contribute to key decisions that shape the ecosystem. Join the governance and make your voice heard.",
+      "Be a part of ZeeChain's future! Vote on proposals, stake your tokens, and contribute to key decisions that shape the ecosystem. Join the governance and make your voice heard.",
     link: "https://kiran-kumar-km.ghost.io/ghost/#/site",
     ReadMore: "Read more",
   },
   {
-    label: "When is the Testnet arriving for Zero Chain",
+    label: "When is the Testnet arriving for ZeeChain",
     image: When,
     description:
-      "Get ready to experience Zero Chain! The testnet launch is just around the corner, bringing early access to developers and users. Stay tuned for updates and launch details.",
+      "Get ready to experience ZeeChain! The testnet launch is just around the corner, bringing early access to developers and users. Stay tuned for updates and launch details.",
     link: "",
     ReadMore: "Read more",
   },
   {
-    label: "How to use Zero Chain Testnet",
+    label: "How to use ZeeChain Testnet",
     image: How,
     description:
-      "Explore Zero Chain's features risk-free on the testnet. Learn how to set up your wallet, deploy smart contracts, and interact with DeFiAI-powered services before the mainnet launch.",
+      "Explore ZeeChain's features risk-free on the testnet. Learn how to set up your wallet, deploy smart contracts, and interact with DeFiAI-powered services before the mainnet launch.",
     link: "",
     ReadMore: "Read more",
   },
