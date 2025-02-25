@@ -1,0 +1,32 @@
+<svg width="354" height="489" viewBox="0 0 354 489" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_ii_314_153)">
+<path d="M3.69666 330.766C32.2577 456.995 225.993 520.727 436.415 473.116C646.838 425.505 794.266 284.58 765.705 158.351C737.144 32.1218 543.41 -31.6106 332.987 16.0005C122.564 63.6116 -24.8644 204.537 3.69666 330.766Z" fill="url(#paint0_linear_314_153)"/>
+</g>
+<path d="M3.72869 330.759C18.0057 393.857 73.5673 441.341 151.868 467.1C230.168 492.858 331.202 496.889 436.408 473.084C541.615 449.28 631.072 402.148 690.657 345.191C750.242 288.234 779.95 221.457 765.673 158.358C751.396 95.2592 695.835 47.7752 617.534 22.0168C539.234 -3.74135 438.201 -7.77191 332.994 16.0326C227.787 39.837 138.33 86.9687 78.7454 143.925C19.16 200.882 -10.5483 267.66 3.72869 330.759Z" stroke="url(#paint1_linear_314_153)" stroke-width="0.0656921" stroke-linecap="round"/>
+<defs>
+<filter id="filter0_ii_314_153" x="-2.34253" y="-3.0632" width="786.607" height="492.963" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="15.02" dy="-3.28"/>
+<feGaussianBlur stdDeviation="12.5128"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.625 0 0 0 0 0.0338542 0 0 0 0 0.0338542 0 0 0 0.76 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_314_153"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-2.5" dy="1"/>
+<feGaussianBlur stdDeviation="3.75383"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.829417 0 0 0 0 0.629167 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_314_153" result="effect2_innerShadow_314_153"/>
+</filter>
+<linearGradient id="paint0_linear_314_153" x1="697.605" y1="102.321" x2="110.752" y2="582.939" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFC56F"/>
+<stop offset="1" stop-color="#6D1400"/>
+</linearGradient>
+<linearGradient id="paint1_linear_314_153" x1="3237.43" y1="-549.644" x2="3340.86" y2="-92.5285" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BDBDBD"/>
+<stop offset="1" stop-color="#BDBDBD" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
