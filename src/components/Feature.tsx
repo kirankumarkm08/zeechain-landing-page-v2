@@ -2,8 +2,6 @@
 
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import Image from "next/image";
-import background_left from "/public/assets/background-assets/Features_left_bg.svg";
-import Leftside_Bg from "/public/assets/background-assets/hero_left_bg.svg";
 
 interface featuresArray {
   name: string;
@@ -75,13 +73,17 @@ function Features() {
   return (
     <div className="px-2 overflow-hidden sm:p-6 md:p-8 mt-10 relative   ">
       <Image
-        src={background_left}
+        src={"/assets/background-assets/Features_left_bg.svg"}
         alt="background"
         className=" absolute start-0 blur-md"
+        width={500}
+        height={1000}
       />
       <Image
-        src={Leftside_Bg}
+        src={"/assets/background-assets/hero_left_bg.svg"}
         alt="bg"
+        width={500}
+        height={1000}
         className="  absolute  rotate-180  top-32 end-0 blur-lg shrink-0"
       />
 

@@ -103,9 +103,11 @@ const Hero = () => {
     <section className="w-full font-display relative min-h-screen">
       <div className="absolute inset-0 pointer-events-none ">
         <Image
-          src={Leftside_Bg || "/placeholder.svg"}
+          src={"/assets/background-assets/hero_left_bg.svg"}
           alt="Decorative background element"
           className="top-0 start-0 blur-lg"
+          width={500}
+          height={100}
         />
         <motion.div
           animate={ellipseAnimation}
@@ -226,7 +228,7 @@ const Hero = () => {
             className="absolute right-1  top-1/2 -translate-y-1/2 flex items-center space-x-1"
             variants={iconContainerVariants}
           >
-             <motion.span variants={iconVariants}>
+            <motion.span variants={iconVariants}>
               <IoIosArrowForward />
             </motion.span>
             <motion.span variants={iconVariants}>
