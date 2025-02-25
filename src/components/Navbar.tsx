@@ -79,7 +79,6 @@ const Navbar = () => {
         <Image
           src="/assets/navbar/Mobile_menu.svg"
           alt="menu"
-          className="w-[30px]"
           onClick={handleMobileView}
           width={30}
           height={30}
