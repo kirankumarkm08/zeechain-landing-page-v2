@@ -61,14 +61,14 @@ const Get_started = () => {
       >
         Get-Started with Zero Chain
       </motion.h1>
-      <div ref={ref} className="grid lg:grid-cols-3 justify-center gap-10  ">
+      <div ref={ref} className="grid lg:grid-cols-3 justify-center gap-5  ">
         {Blog.map((blog, index) => (
           <motion.div
             key={blog.label}
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="w-[384px] rounded-3xl border border-pink-500 p-[24px]  bg-card_background flex flex-col items-center gap-7 leading-30 line-extra-tight"
+            className="max-w-[384px] rounded-3xl border border-pink-500 p-[24px]  bg-card_background flex flex-col items-center gap-7 leading-30 line-extra-tight"
           >
             <Image
               src={blog.image}
