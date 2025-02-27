@@ -45,10 +45,10 @@ const Newsletter = () => {
         className=" absolute"
       />
       <div className="flex flex-col items-center pt-20 relative">
-        <h1 className="bg-text-top-buttom-linear bg-clip-text text-transparent text-40 font-semibold font-display leading-166">
+        <h1 className="bg-text-top-buttom-linear bg-clip-text text-transparent text-20 md:text-40 font-semibold font-display leading-166">
           Newsletter Section
         </h1>
-        <h3 className="font-light text-24 leading-60 text-white-50 font-inter">
+        <h3 className="font-light text-14 md:text-24 leading-60 text-white-50 font-inter">
           Subscribe to our newsletter
         </h3>
         <form
