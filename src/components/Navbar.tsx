@@ -5,79 +5,62 @@ import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "@/constants";
 import MobileNavbar from "./MobileView/MobileNavbar";
-import CustomButton from "./Custom-Button";
-import ZEE_logo from "/public/assets/ZEE_logo/Zeechain_logo.jpeg";
+import CustomButton from "./Register-Btn";
+import NavDropdown from "./NavDropdown";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-  // const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const handleMobileView = () => setMenu((prev) => !prev);
 
-  // const toggleDropdown = (title: string) => {
-  //   setActiveDropdown(activeDropdown === title ? null : title);
-  // };
-
-  // const getDropdownItems = (title: string) => {
-  //   const navItem = Product.find((nav) => nav.title === title);
-  //   return navItem ? navItem.items : [];
-  // };
+  const toggleDropdown = (title: string) => {
+    setActiveDropdown(activeDropdown === title ? null : title);
+  };
 
   return (
-    <div className="bg-primary h-[60px] flex justify-between px-10 lg:px-20 items-center fixed w-full z-50 font-inter">
+    <div className=" h-[60px] flex justify-between px-10 lg:px-20  items-center fixed w-full z-50 font-inter">
       <Link href="/" className="flex items-center gap-3">
         <Image
-          src={ZEE_logo || "/placeholder.svg"}
+          src="/assets/navbar/Zeechain_Logo.svg"
           alt="logo"
-          className="w-[200px] bg-transparent h-[100px]"
+          width={120}
+          height={23}
+          className=" bg-transparent"
         />
-        {/* <p className="font-inter leading-[17px] text-white-200">ZEE Chain</p> */}
       </Link>
       <nav className="hidden md:flex gap-[25px]">
         {navLinks.map((nav) => (
           <div key={nav.label} className="relative group">
             <button
-              className="text-white-500 flex items-center gap-2"
-              // onClick={() => toggleDropdown(nav.label)}
+              className="text-white-500 flex items-center justify-center gap-2 text-14 font-inter font-medium leading-loose "
+              onClick={() => toggleDropdown(nav.label)}
             >
-              <h1>{nav.label}</h1>
-              <Image src={nav.icon || "/placeholder.svg"} alt={nav.label} />
+              {nav.label}
+              <Image
+                src={nav.icon}
+                alt={"nav.label"}
+                width={7}
+                height={4}
+                className={
+                  activeDropdown === nav.label
+                    ? "rotate-180 duration-300"
+                    : "duration-300 "
+                }
+              />
             </button>
-            {/* <div className="absolute invisible group-hover:visible opacity-0 group-hover:opacity-100 top-[40px] left-0 bg-white shadow-lg rounded-xl py-4 min-w-[320px] transition-all duration-200 bg-card_background">
-              {getDropdownItems(nav.title)?.map((item) => (
-                <Link
-                  key={item.title}
-                  href={item.href}
-                  className="flex items-start gap-3 px-4 py-3 hover:bg-gray-50"
-                >
-                  <div className="w-5 h-5 mt-1">
-                    <Image
-                      src={item.icon || "/placeholder.svg"}
-                      alt={item.title}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-gray-900 text-sm font-medium">
-                      {item.title}
-                    </span>
-                    <span className="text-gray-500 text-sm">
-                      {item.description}
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div> */}
+            {activeDropdown === nav.label && nav.dropdownItems && (
+              <NavDropdown items={nav.dropdownItems} />
+            )}
           </div>
         ))}
       </nav>
-      <div className="hidden md:flex">
-        <CustomButton />
+      <div className="hidden md:flex ">
+        <CustomButton className=" min-w-[130px] p-[14px] text-12 gap-8 font-semibold leading-none tracking-[0.24px] " />
       </div>
       <div className="md:hidden">
         <Image
-          src="/assets/navbar/Mobile_menu.svg"
+          src="/assets/navbar/menu.svg"
           alt="menu"
           onClick={handleMobileView}
           width={30}

@@ -3,16 +3,16 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
-import CustomButton from "./Custom-Button";
+import CustomButton from "./Register-Btn";
 import Menora_1 from "/public/assets/background-assets/Hero_monera-1.svg";
 import Menora_2 from "/public/assets/background-assets/Hero_monera-2.svg";
 import Eth from "/public/assets/background-assets/Hero_Eth.svg";
 import Bitcoin from "/public/assets/background-assets/Hero_bitcoin.svg";
 import yellowish_sphere from "/public/assets/background-assets/Yellowish_sphere.svg";
 import Purplish_Sphare from "/public/assets/background-assets/Purpleish_sphere.svg";
-import Ellipse1 from "/public/assets/background-assets/Ellipse1.svg";
-import Ellipse3 from "/public/assets/background-assets/Ellipse3.svg";
-import Ellipse2 from "/public/assets/background-assets/Ellipse2.svg";
+// import Ellipse1 from "/public/assets/background-assets/Ellipse1.svg";
+// import Ellipse3 from "/public/assets/background-assets/Ellipse3.svg";
+// import Ellipse2 from "/public/assets/background-assets/Ellipse2.svg";
 import Star8 from "/public/assets/background-assets/star8.svg";
 import Star6 from "/public/assets/background-assets/star6.svg";
 import Star4 from "/public/assets/background-assets/star4.svg";
@@ -65,8 +65,8 @@ const Hero = () => {
   };
 
   const iconVariants = {
-    initial: { opacity: 0, x: -10 },
-    hover: { opacity: 1, x: 2 },
+    initial: { opacity: 0, x: -5 },
+    hover: { opacity: 1, x: 1 },
   };
 
   const floatAnimation = {
@@ -88,15 +88,15 @@ const Hero = () => {
     },
   };
 
-  const ellipseAnimation = {
-    scale: [1, 1.05, 1],
-    opacity: [0.8, 1, 0.8],
-    transition: {
-      duration: 10,
-      repeat: Number.POSITIVE_INFINITY,
-      ease: "easeInOut",
-    },
-  };
+  // const ellipseAnimation = {
+  //   scale: [1, 1.05, 1],
+  //   opacity: [0.8, 1, 0.8],
+  //   transition: {
+  //     duration: 10,
+  //     repeat: Number.POSITIVE_INFINITY,
+  //     ease: "easeInOut",
+  //   },
+  // };
 
   return (
     <section className="w-full font-display relative min-h-screen">
@@ -108,36 +108,54 @@ const Hero = () => {
           width={500}
           height={100}
         />
-        <motion.div
+        {/* <motion.div
           animate={ellipseAnimation}
-          className="absolute top-1/3 start-1/4 w-[10%] md:w-auto"
+          className="absolute top-1/3 start-1/4"
         >
           <Image
             src={Ellipse1 || "/placeholder.svg"}
             alt=""
-            className="w-full h-auto"
+            className="h-auto w-full"
+            // width={500}
+            // height={500}
+            style={{
+              maxWidth: "100%",
+              objectFit: "contain",
+            }}
           />
         </motion.div>
         <motion.div
           animate={ellipseAnimation}
-          className="absolute top-32 start-32 w-[15%] md:w-auto"
+          className="absolute top-32 start-1/4 "
         >
           <Image
             src={Ellipse2 || "/placeholder.svg"}
             alt=""
-            className="w-full h-auto"
+            className="w-full "
+            // width={500}
+            // height={500}
+            style={{
+              maxWidth: "100%",
+              objectFit: "contain",
+            }}
           />
         </motion.div>
         <motion.div
-          animate={ellipseAnimation}
-          className="absolute rotate-[14deg] shrink-0 top-10 w-[20%] md:w-auto"
+          animate={"ellipseAnimation"}
+          className="absolute  shrink-0 top-0 "
         >
           <Image
             src={Ellipse3 || "/placeholder.svg"}
             alt=""
-            className="w-full h-auto"
+            className="w-full h-screen  "
+            // width={500}
+            // height={500}
+            style={{
+              maxWidth: "100%",
+              objectFit: "contain",
+            }}
           />
-        </motion.div>
+        </motion.div> */}
         <motion.div
           animate={starAnimation}
           className="absolute top-32 start-44"
@@ -209,7 +227,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="text-white-200 flex flex-col items-center justify-center min-h-screen relative z-10 px-4"
+        className="text-white-200 flex flex-col items-center  justify-center min-h-screen relative z-10 px-4"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -224,7 +242,7 @@ const Hero = () => {
         >
           Building since 2020
           <motion.span
-            className="absolute right-1  top-1/2 -translate-y-1/2 flex items-center space-x-1"
+            className="absolute right-1  top-1/2 -translate-y-1/2 flex items-center "
             variants={iconContainerVariants}
           >
             <motion.span variants={iconVariants}>
@@ -236,19 +254,19 @@ const Hero = () => {
           </motion.span>
         </motion.button>
         <motion.h1
-          className="font-semibold text-[24px] xl:text-[64px] capitalize text-center leading-tight"
+          className="font-semibold text-24 md:text-40 xl:text-64 capitalize text-center leading-tight"
           variants={itemVariants}
         >
           A DeFi and AI Fusion L1 Inter Chain{" "}
         </motion.h1>
         <motion.h2
-          className="bg-linear-gradient bg-clip-text text-transparent font-semibold text-20 xl:text-64 leading-tight"
+          className="bg-linear-gradient bg-clip-text text-transparent font-semibold text-24 md:text-40 xl:text-64 leading-tight"
           variants={itemVariants}
         >
           built on Cosmos.
         </motion.h2>
         <motion.p
-          className="max-w-[550px] flex items-center text-center leading-snug text-12  lg:text-18 text-white-700 font-light font-inter"
+          className="max-w-[550px] flex items-center text-center leading-snug text-14s  lg:text-18 text-white-700 font-light font-inter"
           variants={itemVariants}
         >
           ZeeChain is the First DeFiAI L1 BlockChain fulfilling all your
@@ -256,7 +274,7 @@ const Hero = () => {
           Staking and Intelligent Yield Management.
         </motion.p>
         <motion.div className="mt-10 font-inter " variants={itemVariants}>
-          <CustomButton />
+          <CustomButton className="w-[192px] h-[22px] px-[32xpx] py-[20px]  " />
         </motion.div>
       </motion.div>
     </section>

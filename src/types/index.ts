@@ -1,6 +1,7 @@
+import { StaticImageData } from "next/image";
 export interface NavLinks {
   label: string;
-  icon: string;
+  icon: string | StaticImageData;
 }
 
 export interface FooterLinks {
@@ -9,30 +10,15 @@ export interface FooterLinks {
   icon?: string;
 }
 
-// export interface ZEELinks {
-//   title: string;
-//   link: string;
-// }
-
-// export interface CommunityLinks {
-//   title: string;
-//   link: string;
-//   icon: string;
-// }
-
 export interface DropdownItem {
   title: string;
-  description?: string;
-  icon: string;
   href: string;
+  description?: string;
+  icon?: string | StaticImageData;
 }
 
-// Define the type for a navigation link
-export interface Products {
-  label?: string;
-  title: string;
-  href: string;
-  icon: string;
-  description: string;
-  dropdownItems?: DropdownItem[];
+export interface NavLink {
+  label: string;
+  icon: string | StaticImageData;
+  dropdownItems: DropdownItem[];
 }

@@ -1,23 +1,97 @@
-import Arrow from "/public/assets/navbar/Arrow.svg";
-import {
-  NavLinks,
-  FooterLinks,
-  // Products,
-  DropdownItem,
-} from "@/types";
+import type { NavLink, FooterLinks } from "@/types";
+import Arrow_down from "/public/assets/navbar/Arrow-down.svg";
 
-export const navLinks: NavLinks[] = [
+export const navLinks: NavLink[] = [
   {
     label: "Products",
-    icon: Arrow,
+    icon: Arrow_down,
+    dropdownItems: [
+      {
+        icon: "",
+        title: "Exchange ",
+        href: "https://app.zeroswap.io/swap",
+        description:
+          "Bridge assets across chains with zero fee and gasless transactions",
+      },
+      {
+        icon: "",
+        title: "Stacking ",
+        href: "https://app.zeroswap.io/staking",
+        description: "Stake to earn rewards and participate in ZeeDO",
+      },
+      {
+        icon: "",
+        title: "Bridge  ",
+        href: "https://app.zeroswap.io/staking",
+        description: "Bi-directional bridge between ZEE token on multichain",
+      },
+      {
+        icon: "",
+        title: "ZeeDo ",
+        href: "https://zeedo.zeroswap.io/",
+        description: "Simple anad Fair Dex Token offering",
+      },
+      {
+        icon: "",
+        title: "Predictions ",
+        href: "https://predictions.zeroswap.io/",
+        description: "Predict future without losing money ",
+      },
+      {
+        icon: "",
+        title: "test Drive ",
+        href: "https://testdrive.zeroswap.io/",
+        description: "Try out our Incentivizes testnets",
+      },
+    ],
   },
   {
     label: "Community",
-    icon: Arrow,
+    icon: Arrow_down,
+    dropdownItems: [
+      {
+        icon: "",
+        title: "Telegram",
+        href: "https://t.me/zeroswap",
+      },
+      {
+        icon: "",
+
+        title: "Twitter",
+        href: "https://twitter.com/ZeroSwapLabs",
+      },
+      {
+        icon: "",
+        title: "Discord",
+        href: "https://discord.com/invite/nVW9sq9XSQ",
+      },
+      {
+        icon: "",
+        title: "Medium",
+        href: "https://medium.com/zeroswaplabs",
+      },
+      {
+        icon: "",
+        title: "Reddit",
+        href: "https://www.reddit.com/r/ZeroSwapLabs/",
+      },
+    ],
   },
   {
-    label: "Resources",
-    icon: Arrow,
+    label: "Recources",
+    icon: Arrow_down,
+    dropdownItems: [
+      {
+        title: "",
+        href: "",
+        description: "Learn about our company",
+      },
+      {
+        title: "",
+        href: "",
+        description: "",
+      },
+    ],
   },
 ];
 
@@ -58,98 +132,22 @@ export const ZEE: FooterLinks[] = [
 export const Community: FooterLinks[] = [
   {
     title: "Telegram",
-    link: "",
+    link: "https://t.me/zeroswap",
     icon: "",
   },
   {
     title: "Twitter",
-    link: "",
+    link: "https://twitter.com/ZeroSwapLabs",
     icon: "",
   },
   {
     title: "LinkedIn",
-    link: "",
+    link: "https://www.linkedin.com/company/zeroswap/",
     icon: "",
   },
   {
     title: "Community Forum",
     link: "",
     icon: "",
-  },
-];
-
-export const Product: DropdownItem[] = [
-  {
-    title: "Exchange",
-    description:
-      "Bridge assets across chains with zero fee and gasless transactions",
-    icon: "/assets/icons/exchange.svg",
-    href: "https://app.zeroswap.io/swap",
-  },
-  {
-    title: "Staking",
-    description: "Stake to earn rewards and participate in ZeeDAO",
-    icon: "/assets/icons/staking.svg",
-    href: "https://app.zeroswap.io/staking",
-  },
-  {
-    title: "Bridge",
-    description: "Bi-Directional bridge between ZEE tokens on multi-chain",
-    icon: "/assets/icons/bridge.svg",
-    href: "https://bridge.zeroswap.io/",
-  },
-  {
-    title: "ZeeDo",
-    description: "Simple and Fair Dex Token Offering",
-    icon: "/assets/icons/zeedo.svg",
-    href: "https://zeedo.zeroswap.io/projects",
-  },
-  {
-    title: "Predictions",
-    description: "Predict future without losing money",
-    icon: "/assets/icons/predictions.svg",
-    href: "https://predictions.zeroswap.io/",
-  },
-  {
-    title: "Test Drive",
-    description: "Try out our incentivized testnets",
-    icon: "/assets/icons/test-drive.svg",
-    href: "https://testdrive.zeroswap.io/",
-  },
-];
-
-export const Resources: DropdownItem[] = [
-  {
-    title: "Discord",
-    description: "Join our community chat",
-    icon: "/assets/navbar/discord.svg",
-    href: "/discord",
-  },
-];
-
-export const CommunitySocial: DropdownItem[] = [
-  {
-    title: "Discord",
-    description: "Join our community chat",
-    icon: "/assets/navbar/discord.svg",
-    href: "/discord",
-  },
-  {
-    title: "Twitter",
-    description: "Follow us for updates",
-    icon: "/assets/navbar/twitter.svg",
-    href: "/twitter",
-  },
-  {
-    title: "Blog",
-    description: "Read our latest news",
-    icon: "/assets/navbar/blog.svg",
-    href: "/blog",
-  },
-  {
-    title: "Forum",
-    description: "Discuss with the community",
-    icon: "/assets/navbar/forum.svg",
-    href: "/forum",
   },
 ];

@@ -106,21 +106,17 @@ export default {
       },
       backgroundImage: {
         button_bg: "linear-gradient(107deg, #FFC56F 13.43%, #B66C37 55.18%)",
-
         "linear-gradient":
           "linear-gradient(to bottom, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 50%, rgba(237, 237, 237, 0.41) 100%)",
         "text-top-buttom-linear": "linear-gradient(to right, #FFFFFF, #999999)",
-        shadow_bg: "url('/assets/background-assets/bg-shadow.svg')",
-        "Section-title-gradient":
-          "linear-gradient(180deg, #EDEDED 0%, #EDEDED 0.02%, rgba(237, 237, 237, 0.41) 154.75%)",
-        background_mesh_gradient:
-          "url('/assets/background-assets/Background_Mesh_gradient.svg')",
-        Newsletter_bg: "url('/assets/background-assets/newsletter_bg1.png')",
-        background_mesh:
-          "url('/assets/background-assets/Background_gradient.svg')",
-        background_dot: "url('/assets/background-assets/bg-dots.png')",
-        ellipse: "url('/assets/background-assets/Ellipse.svg')",
-        footer_mesh: "url('/assets/background-assets/footer_grafient.svg')",
+        // shadow_bg: 'url('/assets/background-assets/bg-shadow.svg')',
+        // 'Section-title-gradient': 'linear-gradient(180deg, #EDEDED 0%, #EDEDED 0.02%, rgba(237, 237, 237, 0.41) 154.75%)',
+        // background_mesh_gradient: 'url('/assets/background-assets/Background_Mesh_gradient.svg')',
+        // Newsletter_bg: 'url('/assets/background-assets/newsletter_bg1.png')',
+        // background_mesh: 'url('/assets/background-assets/Background_gradient.svg')',
+        // background_dot: 'url('/assets/background-assets/bg-dots.png')',
+        // ellipse: 'url('/assets/background-assets/Ellipse.svg')',
+        // footer_mesh: 'url('/assets/background-assets/footer_grafient.svg')'
       },
       backgroundColor: {
         "primary-badge": "rgba(255, 255, 255, 0.09)",
@@ -146,6 +142,28 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - var(--gap)))",
+          },
+        },
+        "marquee-vertical": {
+          from: {
+            transform: "translateY(0)",
+          },
+          to: {
+            transform: "translateY(calc(-100% - var(--gap)))",
+          },
+        },
+      },
+      animation: {
+        marquee: "marquee var(--duration) infinite linear",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
       },
     },
   },

@@ -1,23 +1,62 @@
-import React from "react";
+"use client";
+
+import { useState } from "react";
 import { navLinks } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
-import CustomButton from "../Custom-Button";
+import CustomButton from "../Register-Btn";
 
 const MobileNavbar = () => {
+  const [openDropdowns, setOpenDropdowns] = useState<{
+    [key: string]: boolean;
+  }>({});
+
+  const toggleDropdown = (label: string) => {
+    setOpenDropdowns((prev) => ({
+      ...prev,
+      [label]: !prev[label],
+    }));
+  };
+
   return (
-    <div className="absolute   justify-center items-center   w-full start-0 h-[7800px]   bg-primary">
-      {navLinks.map((navs) => (
-        <Link
-          key={navs.label}
-          href={""}
-          className="text-white-100 flex  gap-4 border-b border-lightgra  my-5 py-2  px-2     "
-        >
-          <p className="text-white-500 ">{navs.label}</p>
-          <Image src={navs.icon} alt={navs.label} />
-        </Link>
+    <div className="absolute w-full start-0 h-screen bg-primary overflow-y-auto">
+      {navLinks.map((nav) => (
+        <div key={nav.label} className="border-b border-lightgra">
+          <button
+            onClick={() => toggleDropdown(nav.label)}
+            className="text-white-100 flex justify-between items-center w-full gap-4 my-5 py-2 px-2"
+          >
+            <p className="text-white-500">{nav.label}</p>
+            <Image
+              src={nav.icon || "/placeholder.svg"}
+              alt={nav.label}
+              width={20}
+              height={20}
+              className={
+                openDropdowns[nav.label]
+                  ? "rotate-180 duration-300"
+                  : "duration-300"
+              }
+            />
+          </button>
+          {openDropdowns[nav.label] && nav.dropdownItems && (
+            <div className="pl-4 pb-2">
+              {nav.dropdownItems.map((item) => (
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className="text-white-300 block py-2"
+                >
+                  {item.title}
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
       ))}
-      <CustomButton />
+      <div className="flex justify-center px-2 py-4">
+        <CustomButton className=" min-w-[130px] p-[14px] text-12 gap-8 font-semibold leading-none tracking-[0.24px]" />
+      </div>
     </div>
   );
 };

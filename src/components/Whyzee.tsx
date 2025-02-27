@@ -80,7 +80,7 @@ const Whyzee = () => {
         className="absolute  top-1/2 start-0 "
       />
       <div className=" py-20 px-4 mx-auto max-w-[1440px] relative">
-        <h1 className="text-center mb-12 text-2xl sm:text-3xl md:text-40 font-semibold bg-Section-title-gradient bg-clip-text text-transparent font-display leading-166 tracking-wide">
+        <h1 className="text-center mb-12 text-20 md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide">
           Why ZEE Chain?
         </h1>
         <div

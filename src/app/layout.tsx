@@ -8,6 +8,9 @@ import { clash_Display, inter } from "@/fonts";
 export const metadata: Metadata = {
   title: "Zeechain",
   description: "zeechain landing page",
+  icons: {
+    icon: "/assets/navbar/zeechain.ico",
+  },
 };
 
 export default function RootLayout({

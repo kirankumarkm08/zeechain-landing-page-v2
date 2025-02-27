@@ -3,13 +3,13 @@
 import React from "react";
 import { useState } from "react";
 
-const CustomButton = () => {
+const CustomButton: React.FC<{ className?: string }> = ({ className }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div>
       <button
-        className="relative overflow-hidden px-6 py-3  group rounded-full bg-button_bg text-white font-semibold text-white-100 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg   "
+        className={`relative overflow-hidden   group rounded-full bg-button_bg   text-white font-semibold text-white-100 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg  flex justify-center items-center ${className}`}
         onMouseEnter={() => isHovered && setIsHovered(true)}
         onMouseLeave={() => isHovered && setIsHovered(false)}
       >
