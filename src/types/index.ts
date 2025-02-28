@@ -7,11 +7,12 @@ export interface NavLinks {
 export interface FooterLinks {
   title: string;
   link: string;
-  icon?: string;
+  icon?: string | StaticImageData;
 }
 
 export interface DropdownItem {
   title: string;
+  label?: string;
   href: string;
   description?: string;
   icon?: string | StaticImageData;

@@ -49,7 +49,7 @@ const MobileNavbar = () => {
                   className="text-white-300  justify-start gap-5 py-2 flex items-center"
                 >
                   <Image
-                    src={item.icon}
+                    src={item.icon || "/placeholder.svg"}
                     alt={item.title}
                     width={24}
                     height={24}

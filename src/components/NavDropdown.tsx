@@ -5,8 +5,9 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
 interface DropdownItem {
-  icon: string | StaticImageData;
+  icon?: string | StaticImageData;
   title: string;
+  label?: string;
   href: string;
   description?: string;
 }
