@@ -27,6 +27,7 @@ const MobileNavbar = () => {
             className="text-white-100 flex justify-between items-center w-full gap-4 my-5 py-2 px-2"
           >
             <p className="text-white-500">{nav.label}</p>
+
             <Image
               src={nav.icon || "/placeholder.svg"}
               alt={nav.label}
@@ -45,8 +46,14 @@ const MobileNavbar = () => {
                 <Link
                   key={item.title}
                   href={item.href}
-                  className="text-white-300 block py-2"
+                  className="text-white-300  justify-start gap-5 py-2 flex items-center"
                 >
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={24}
+                    height={24}
+                  />
                   {item.title}
                 </Link>
               ))}

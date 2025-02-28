@@ -7,38 +7,38 @@ export const navLinks: NavLink[] = [
     icon: Arrow_down,
     dropdownItems: [
       {
-        icon: "",
+        icon: "/assets/navbar/Icons/Exchange.svg",
         title: "Exchange ",
         href: "https://app.zeroswap.io/swap",
         description:
           "Bridge assets across chains with zero fee and gasless transactions",
       },
       {
-        icon: "",
+        icon: "/assets/navbar/Icons/Stake.svg",
         title: "Stacking ",
         href: "https://app.zeroswap.io/staking",
         description: "Stake to earn rewards and participate in ZeeDO",
       },
       {
-        icon: "",
+        icon: "/assets/navbar/Icons/Bridge.svg",
         title: "Bridge  ",
         href: "https://app.zeroswap.io/staking",
         description: "Bi-directional bridge between ZEE token on multichain",
       },
       {
-        icon: "",
+        icon: "/assets/navbar/Icons/ZeeDO.svg",
         title: "ZeeDo ",
         href: "https://zeedo.zeroswap.io/",
         description: "Simple anad Fair Dex Token offering",
       },
       {
-        icon: "",
+        icon: "/assets/navbar/Icons/Prediction.svg",
         title: "Predictions ",
         href: "https://predictions.zeroswap.io/",
         description: "Predict future without losing money ",
       },
       {
-        icon: "",
+        icon: "/assets/navbar/Icons/Test_drive.svg",
         title: "test Drive ",
         href: "https://testdrive.zeroswap.io/",
         description: "Try out our Incentivizes testnets",
