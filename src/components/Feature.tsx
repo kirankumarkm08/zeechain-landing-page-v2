@@ -29,7 +29,7 @@ const features: featuresArray[] = [
     name: "Smarter Yield Optimization",
     background: "/assets/Features/Card3.svg",
     className:
-      "col-span-2 md:col-span-3  row-span-1 col-start-1 lg:col-start-3  lg:col-end-3 lg:-row-start-2 lg:row-end-3",
+      "col-span-2 md:col-span-3  row-span-1 col-start-1 row-span-4 lg:col-start-3  lg:col-end-3 lg:-row-start-2 lg:row-end-3",
     textPosition: "top-left",
   },
   {
@@ -50,21 +50,21 @@ const features: featuresArray[] = [
     name: "AI Driven Trading Bots",
     background: "/assets/Features/Card5.svg",
     className:
-      " col-span-2 md:col-span-3   row-span-1 lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-3",
+      " col-span-2 md:col-span-3   row-span-2 lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-3",
     textPosition: "middle",
   },
   {
     name: "AI Powered DAO Governance",
     background: "/assets/Features/Card7.svg",
     className:
-      "col-span-2 md:col-span-3  row-span-1 lg:col-start-2 lg:col-end-3 lg:row-start-6 lg:row-end-4",
+      "col-span-2 md:col-span-3 row-span-3  lg:col-start-2 lg:col-end-3 lg:row-start-6 lg:row-end-4",
     textPosition: "top-left",
   },
   {
     name: "Cross Chain Liquidity Hub",
     background: "/assets/Features/Card8.svg",
     className:
-      "col-span-2 md:col-span-3 row-span-1 lg:col-start-3 lg:col-end-4 lg:row-start-4 lg:row-end-6",
+      "col-span-2 md:col-span-3 row-span-3 lg:col-start-3 lg:col-end-4 lg:row-start-4 lg:row-end-6",
     textPosition: "bottom",
   },
 ];
