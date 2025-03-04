@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Learn, ZEE, Community } from "@/constants";
-import Logo from "/public/assets/ZEEchain_logo/Footer_logo.svg";
 
 const FooterSection = ({
   title,

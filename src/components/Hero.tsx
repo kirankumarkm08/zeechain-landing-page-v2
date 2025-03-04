@@ -88,15 +88,15 @@ const Hero = () => {
     },
   };
 
-  const ellipseAnimation = {
-    scale: [1, 1.05, 1],
-    opacity: [0.8, 1, 0.8],
-    transition: {
-      duration: 10,
-      repeat: Number.POSITIVE_INFINITY,
-      ease: "easeInOut",
-    },
-  };
+  // const ellipseAnimation = {
+  //   scale: [1, 1.05, 1],
+  //   opacity: [0.8, 1, 0.8],
+  //   transition: {
+  //     duration: 10,
+  //     repeat: Number.POSITIVE_INFINITY,
+  //     ease: "easeInOut",
+  //   },
+  // };
 
   return (
     <section className="w-full font-display relative ">
