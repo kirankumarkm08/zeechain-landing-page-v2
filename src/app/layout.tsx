@@ -9,7 +9,10 @@ export const metadata: Metadata = {
   title: "Zeechain",
   description: "zeechain landing page",
   icons: {
-    icon: "/assets/navbar/zeechain.ico",
+    icon: "/assets/zeechain-logo.ico",
+  },
+  other: {
+    themeName: "blue",
   },
 };
 

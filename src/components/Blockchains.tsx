@@ -80,9 +80,7 @@ export default function Blockchains() {
         <Image
           src={chain.icon || "/placeholder.svg"}
           alt={`${chain.label} logo`}
-          className={`transition-transform group-hover:scale-110 ${
-            !chain.coloredIcon && "group-hover:opacity-70"
-          }`}
+          className={`transition-transform hover:scale-110`}
           fill
         />
       </div>
@@ -125,7 +123,7 @@ export default function Blockchains() {
             variants={container}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-y-8 sm:gap-x-6 sm:gap-y-10 md:gap-8 lg:gap-[40px] max-w-[1440px] mx-auto    justify-center items-center justify-items-start"
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-y-8 sm:gap-x-6 sm:gap-y-10 md:gap-8 lg:gap-[40px] max-w-[1440px] mx-auto    justify-center items-center place-content-center  justify-items-start"
           >
             {blockchains.map((chain) => (
               <motion.div

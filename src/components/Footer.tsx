@@ -32,26 +32,19 @@ const FooterSection = ({
 const Footer = () => {
   return (
     <footer className="text-white py-12  px-10 relative  ">
-      {/* <Image
-        src="/assets/background-assets/footer_grafient.svg"
-        alt="bg-gradient"
-        width={1675}
-        height={1105}
-        className=" absolute blur-sm bottom-0 w-full start-0 "
-      /> */}
-      <div className="lg:flex items-center justify-evenly max-w-[1280px] m-auto relative">
+      <div className="lg:flex items-center justify-evenly max-w-[1280px] m-auto ">
         <div className="flex">
-          <div className="space-y-4 border-r border-lightgray pr-20">
+          <div className="space-y-4 border-b lg:border-b-0 lg:border-r  border-lightgray pr-20">
             <div className="flex items-center gap-3">
               <Image
-                src={Logo || "/placeholder.svg"}
+                src={"/assets/zeechain-logo.svg"}
                 alt="ZEE Chain Logo"
-                width={40}
-                height={40}
+                width={200}
+                height={100}
               />
-              <span className="text-white-500 font-semibold text-[24px] leading-[30px]">
+              {/* <span className="text-white-500 font-semibold text-[24px] leading-[30px]">
                 ZEE Chain
-              </span>
+              </span> */}
             </div>
             <p className="text-white-200 max-w-xs text-[16px] font-inter font-light">
               ZeeChain is the first AI-driven DeFi Layer 1, merging Cosmos
@@ -60,12 +53,19 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="md:flex md:flex-row flex-col gap-10 md:gap-20 my-10">
+        <div className="md:flex md:flex-row flex-col gap-10 md:gap-20 my-10 py-5 relative">
           <FooterSection title="Learn" items={Learn} />{" "}
           <FooterSection title="ZEE" items={ZEE} />
           <FooterSection title="Community" items={Community} />
         </div>
       </div>
+      <Image
+        src="/assets/background-assets/footer_grafient.svg"
+        alt="bg-gradient"
+        width={1675}
+        height={1105}
+        className=" absolute blur-sm bottom-0 w-full start-0 -z-10"
+      />
     </footer>
   );
 };

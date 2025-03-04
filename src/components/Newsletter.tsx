@@ -12,13 +12,16 @@ function SubmitButton() {
   return (
     <button
       type="submit"
-      className="bg-button_bg px-6 py-3 rounded-full text-white-300 uppercase font-semibold text-sm md:text-16"
+      className="bg-button_bg px-6 py-3 rounded-full text-white-300 uppercase font-semibold text-sm md:text-16 flex items-center"
       disabled={pending}
     >
       {pending ? (
-        <div className="w-4 h-4 border-2 border-white-300 border-t-transparent rounded-full animate-spin"></div>
+        <div className="w-4 h-4 border-2 border-white-300 border-t-transparent rounded-full animate-spin" />
       ) : (
-        <Image src={Send} alt="send image" />
+        <>
+          <Image src={Send} alt="send image" className="md:hidden    " />
+          <span className="hidden md:inline ">Subscribe Now</span>
+        </>
       )}
     </button>
   );
@@ -53,16 +56,16 @@ const Newsletter = () => {
         </h3>
         <form
           action={formAction}
-          className="mt-10 font-inter gap-2 flex relative"
+          className="mt-10 font-inter gap-2 flex relative items-center justify-center"
         >
           <input
             type="email"
             name="email"
-            className="bg-email_card rounded-full p-4 w-[300px] md:w-[400px] outline-none text-white-300 relative"
+            className="bg-card_background rounded-full px-6 py-4 w-[300px] md:w-[400px] outline-none text-white-300 relative"
             placeholder="Enter your email"
             required
           />
-          <div className="absolute right-2 top-1/2 transform -translate-y-1/2">
+          <div className="absolute right-2 top-1/2 transform -translate-y-1/2 md:relative md:right-auto md:top-auto md:transform-none">
             <SubmitButton />
           </div>
         </form>

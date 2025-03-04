@@ -80,7 +80,7 @@ const Get_started = () => {
             <h2 className="font-medium text-white-600 text-24 leading-32  font-display ">
               {blog.label}
             </h2>
-            <p className="font-light text-14 leading-20 text-white-700 border-b border-gray-200 pb-2 leading-22 font-inter">
+            <p className="font-normal text-14 leading-20 text-white-700 border-b border-gray-200 pb-2 leading-22 font-inter">
               {blog.description}
             </p>
 

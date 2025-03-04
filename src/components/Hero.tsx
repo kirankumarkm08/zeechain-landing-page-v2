@@ -10,9 +10,9 @@ import Eth from "/public/assets/background-assets/Hero_Eth.svg";
 import Bitcoin from "/public/assets/background-assets/Hero_bitcoin.svg";
 import yellowish_sphere from "/public/assets/background-assets/Yellowish_sphere.svg";
 import Purplish_Sphare from "/public/assets/background-assets/Purpleish_sphere.svg";
-// import Ellipse1 from "/public/assets/background-assets/Ellipse1.svg";
-// import Ellipse3 from "/public/assets/background-assets/Ellipse3.svg";
-// import Ellipse2 from "/public/assets/background-assets/Ellipse2.svg";
+import Ellipse1 from "/public/assets/background-assets/Ellipse1.svg";
+import Ellipse3 from "/public/assets/background-assets/Ellipse3.svg";
+import Ellipse2 from "/public/assets/background-assets/Ellipse2.svg";
 import Star8 from "/public/assets/background-assets/star8.svg";
 import Star6 from "/public/assets/background-assets/star6.svg";
 import Star4 from "/public/assets/background-assets/star4.svg";
@@ -88,18 +88,18 @@ const Hero = () => {
     },
   };
 
-  // const ellipseAnimation = {
-  //   scale: [1, 1.05, 1],
-  //   opacity: [0.8, 1, 0.8],
-  //   transition: {
-  //     duration: 10,
-  //     repeat: Number.POSITIVE_INFINITY,
-  //     ease: "easeInOut",
-  //   },
-  // };
+  const ellipseAnimation = {
+    scale: [1, 1.05, 1],
+    opacity: [0.8, 1, 0.8],
+    transition: {
+      duration: 10,
+      repeat: Number.POSITIVE_INFINITY,
+      ease: "easeInOut",
+    },
+  };
 
   return (
-    <section className="w-full font-display relative min-h-screen">
+    <section className="w-full font-display relative ">
       <div className="absolute inset-0 pointer-events-none ">
         <Image
           src={"/assets/background-assets/hero_left_bg.svg"}
@@ -108,94 +108,97 @@ const Hero = () => {
           width={500}
           height={100}
         />
-        {/* <motion.div
-          animate={ellipseAnimation}
-          className="absolute top-1/3 start-1/4"
-        >
-          <Image
-            src={Ellipse1 || "/placeholder.svg"}
-            alt=""
-            className="h-auto w-full"
-            // width={500}
-            // height={500}
-            style={{
-              maxWidth: "100%",
-              objectFit: "contain",
-            }}
-          />
-        </motion.div>
-        <motion.div
-          animate={ellipseAnimation}
-          className="absolute top-32 start-1/4 "
-        >
-          <Image
-            src={Ellipse2 || "/placeholder.svg"}
-            alt=""
-            className="w-full "
-            // width={500}
-            // height={500}
-            style={{
-              maxWidth: "100%",
-              objectFit: "contain",
-            }}
-          />
-        </motion.div>
-        <motion.div
-          animate={"ellipseAnimation"}
-          className="absolute  shrink-0 top-0 "
-        >
-          <Image
-            src={Ellipse3 || "/placeholder.svg"}
-            alt=""
-            className="w-full h-screen  "
-            // width={500}
-            // height={500}
-            style={{
-              maxWidth: "100%",
-              objectFit: "contain",
-            }}
-          />
-        </motion.div> */}
+        <div className=" absolute top-52 lg:top-16  flex  flex-col  justify-center items-center">
+          <motion.div
+            // animate={ellipseAnimation}
+            className=" absolute   w-full flex items-center justify-center"
+          >
+            <Image
+              src={Ellipse1}
+              alt=""
+              className="w-[40vw] sm:w-[50vw] md:w-[60vw] lg:w-full max-w-[679px] h-auto"
+            />
+          </motion.div>
+
+          <motion.div
+            // animate={ellipseAnimation}
+            className=" absolute  w-full flex items-center justify-center"
+          >
+            <Image
+              src={Ellipse2}
+              alt=""
+              className="w-[70vw]  md:w-[80vw] lg:max-w-[1189px] h-auto"
+            />
+          </motion.div>
+
+          <motion.div
+            // animate={ellipseAnimation}
+            className="  w-full flex items-center justify-center"
+          >
+            <Image
+              src={Ellipse3}
+              alt=""
+              className="sm:w-[90vw] md:w-[100vw] lg:max-w-[1724px] w-full h-[748px]"
+            />
+          </motion.div>
+        </div>
+
         <motion.div
           animate={starAnimation}
-          className="absolute top-32 start-44"
+          className="absolute top-32 start-44 hidden md:block"
         >
           <Image src={Star8 || "/placeholder.svg"} alt="" />
         </motion.div>
         <motion.div
           animate={starAnimation}
-          className="absolute end-1/4 top-1/2"
+          className="absolute end-1/4 top-1/2 hidden lg:block"
         >
           <Image src={Star6 || "/placeholder.svg"} alt="" />
         </motion.div>
-        <motion.div animate={starAnimation} className="absolute end-1/4 top-20">
+        <motion.div
+          animate={starAnimation}
+          className="absolute end-1/4 top-20 w-[18px] lg:w-auto"
+        >
           <Image src={Star4 || "/placeholder.svg"} alt="" />
         </motion.div>
         <motion.div
           animate={starAnimation}
           className="absolute bottom-10 start-1/2"
         >
-          <Image src={Star8 || "/placeholder.svg"} alt="" />
+          <Image
+            src={Star8 || "/placeholder.svg"}
+            alt=""
+            className="hidden md:block"
+          />
         </motion.div>
         <motion.div
           animate={floatAnimation}
           className="absolute top-1/4 start-0"
         >
           <Image
-            src={Menora_1 || "/placeholder.svg"}
+            src={Menora_1}
             alt="Decorative element"
+            className="w-[44px] lg:w-auto"
             width={100}
             height={100}
           />
         </motion.div>
         <motion.div
           animate={floatAnimation}
-          className="absolute bottom-0 start-32 hidden lg:flex"
+          className="absolute  start-32 bottom-1/4  w-[46px] md:w-auto"
         >
-          <Image src={Eth || "/placeholder.svg"} alt="Ethereum logo" />
+          <Image
+            src={Eth || "/placeholder.svg"}
+            alt="Ethereum logo"
+            className=" "
+          />
         </motion.div>
-        <motion.div className="absolute end-0 top-20" animate={floatAnimation}>
-          <Image src={Bitcoin || "/placeholder.svg"} alt="Bitcoin logo" />
+        <motion.div className="absolute end-0 top-20 " animate={floatAnimation}>
+          <Image
+            src={Bitcoin}
+            alt="Bitcoin logo"
+            className="w-[25px] h-[29px] mr-5 md:w-auto md:h-auto"
+          />
         </motion.div>
         <motion.div
           animate={floatAnimation}
@@ -204,20 +207,22 @@ const Hero = () => {
           <Image
             src={Menora_2 || "/placeholder.svg"}
             alt="Decorative element"
+            className="hidden md:block"
           />
         </motion.div>
         <motion.div
           animate={floatAnimation}
-          className="absolute top-1/2 end-20"
+          className="absolute -start-5 md:start-auto top-1/2 end-20 w-[46px] md:w-auto"
         >
           <Image
             src={yellowish_sphere || "/placeholder.svg"}
             alt="Yellow sphere"
+            className=""
           />
         </motion.div>
         <motion.div
           animate={floatAnimation}
-          className="absolute top-2/3 end-32"
+          className="absolute top-2/3 end-5 md:end-32  w-[46px] h-[45px] md:w-auto"
         >
           <Image
             src={Purplish_Sphare || "/placeholder.svg"}
@@ -233,7 +238,7 @@ const Hero = () => {
         animate="visible"
       >
         <motion.button
-          className="group relative bg-card_background border-lightgray rounded-full border px-4 py-2 text-white-100 transition-all duration-300 mb-10 font-inter"
+          className="group relative bg-background_card border-lightgray rounded-full border px-4 py-2 text-white-100 transition-all duration-300 mb-10 font-inter"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
@@ -266,7 +271,7 @@ const Hero = () => {
           built on Cosmos.
         </motion.h2>
         <motion.p
-          className="max-w-[550px] flex items-center text-center leading-snug text-14s  lg:text-18 text-white-700 font-light font-inter"
+          className="max-w-[648px]  flex items-center text-center leading-snug text-14s  lg:text-18 text-white-700 font-normal font-inter"
           variants={itemVariants}
         >
           ZeeChain is the First DeFiAI L1 BlockChain fulfilling all your
@@ -274,7 +279,7 @@ const Hero = () => {
           Staking and Intelligent Yield Management.
         </motion.p>
         <motion.div className="mt-10 font-inter " variants={itemVariants}>
-          <CustomButton className="w-[192px] h-[22px] px-[32xpx] py-[20px]  " />
+          <CustomButton className=" px-[24px] md:px-[32xpx] py-[16px] md:py-[20px]   " />
         </motion.div>
       </motion.div>
     </section>

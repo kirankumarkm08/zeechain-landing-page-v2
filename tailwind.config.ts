@@ -109,20 +109,23 @@ export default {
         "linear-gradient":
           "linear-gradient(to bottom, rgba(237, 237, 237, 1) 0%, rgba(237, 237, 237, 1) 50%, rgba(237, 237, 237, 0.41) 100%)",
         "text-top-buttom-linear": "linear-gradient(to right, #FFFFFF, #999999)",
-        // shadow_bg: 'url('/assets/background-assets/bg-shadow.svg')',
-        // 'Section-title-gradient': 'linear-gradient(180deg, #EDEDED 0%, #EDEDED 0.02%, rgba(237, 237, 237, 0.41) 154.75%)',
-        // background_mesh_gradient: 'url('/assets/background-assets/Background_Mesh_gradient.svg')',
-        // Newsletter_bg: 'url('/assets/background-assets/newsletter_bg1.png')',
-        // background_mesh: 'url('/assets/background-assets/Background_gradient.svg')',
-        // background_dot: 'url('/assets/background-assets/bg-dots.png')',
-        // ellipse: 'url('/assets/background-assets/Ellipse.svg')',
-        // footer_mesh: 'url('/assets/background-assets/footer_grafient.svg')'
+        shadow_bg: "url('/assets/background-assets/bg-shadow.svg')",
+        "Section-title-gradient":
+          "linear-gradient(180deg, #EDEDED 0%, #EDEDED 0.02%, rgba(237, 237, 237, 0.41) 154.75%)",
+        background_mesh_gradient:
+          "url('/assets/background-assets/Background_Mesh_gradient.svg')",
+        Newsletter_bg: "url('/assets/background-assets/newsletter_bg1.png')",
+        background_mesh:
+          "url('/assets/background-assets/Background_gradient.svg')",
+        background_dot: "url('/assets/background-assets/bg-dots.png')",
+        ellipse: "url('/assets/background-assets/Ellipse.svg')",
+        footer_mesh: "url('/assets/background-assets/footer_grafient.svg')",
       },
       backgroundColor: {
-        "primary-badge": "rgba(255, 255, 255, 0.09)",
         card_background: "#09090A",
         email_card: "#222631",
         lightgray: "rgba(255, 255, 255, 0.15)",
+        background_card: "rgba(9, 9, 10, 0.90)",
       },
       lineHeight: {
         "16": "16px",

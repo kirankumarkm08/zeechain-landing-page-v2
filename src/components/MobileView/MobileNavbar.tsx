@@ -19,9 +19,9 @@ const MobileNavbar = () => {
   };
 
   return (
-    <div className="absolute w-full start-0 h-screen bg-primary overflow-y-auto">
+    <div className="absolute w-full start-0 h-screen bg-primary overflow-y-auto ">
       {navLinks.map((nav) => (
-        <div key={nav.label} className="border-b border-lightgra">
+        <div key={nav.label} className="border-b border-lightgray px-10">
           <button
             onClick={() => toggleDropdown(nav.label)}
             className="text-white-100 flex justify-between items-center w-full gap-4 my-5 py-2 px-2"
@@ -41,7 +41,7 @@ const MobileNavbar = () => {
             />
           </button>
           {openDropdowns[nav.label] && nav.dropdownItems && (
-            <div className="pl-4 pb-2">
+            <div className="pl-4 pb-2 mx-10">
               {nav.dropdownItems.map((item) => (
                 <Link
                   key={item.title}

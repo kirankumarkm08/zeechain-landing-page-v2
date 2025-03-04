@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "@/constants";
@@ -11,6 +11,7 @@ import NavDropdown from "./NavDropdown";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleMobileView = () => setMenu((prev) => !prev);
 
@@ -18,34 +19,54 @@ const Navbar = () => {
     setActiveDropdown(activeDropdown === title ? null : title);
   };
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setActiveDropdown(null);
+      }
+    };
+
+    if (activeDropdown) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [activeDropdown]);
+
   return (
-    <div className=" h-[60px] flex justify-between px-10 lg:px-20  items-center fixed w-full z-50 font-inter">
+    <div className="h-[60px] flex justify-between px-10 lg:px-20 items-center fixed w-full z-50 font-inter bg-card_background">
       <Link href="/" className="flex items-center gap-3">
         <Image
-          src="/assets/navbar/Zeechain_Logo.svg"
+          src="/assets/zeechain-logo.svg"
           alt="logo"
-          width={120}
-          height={23}
-          className=" bg-transparent"
+          width={200}
+          height={100}
+          className="bg-transparent"
         />
       </Link>
-      <nav className="hidden md:flex gap-[25px]">
+      <nav className="hidden md:flex gap-[25px]" ref={dropdownRef}>
         {navLinks.map((nav) => (
           <div key={nav.label} className="relative group">
             <button
-              className="text-white-500 flex items-center justify-center gap-2 text-14 font-inter font-medium leading-loose "
+              className="text-white-500 flex items-center justify-center gap-2 text-14 font-inter font-medium leading-loose"
               onClick={() => toggleDropdown(nav.label)}
             >
               {nav.label}
               <Image
-                src={nav.icon}
-                alt={"nav.label"}
+                src={nav.icon || "/placeholder.svg"}
+                alt={nav.label}
                 width={7}
                 height={4}
                 className={
                   activeDropdown === nav.label
                     ? "rotate-180 duration-300"
-                    : "duration-300 "
+                    : "duration-300"
                 }
               />
             </button>
@@ -55,8 +76,8 @@ const Navbar = () => {
           </div>
         ))}
       </nav>
-      <div className="hidden md:flex ">
-        <CustomButton className=" min-w-[130px] p-[14px] text-12 gap-8 font-semibold leading-none tracking-[0.24px] " />
+      <div className="hidden md:flex">
+        <CustomButton className="min-w-[130px] p-[14px] text-12 gap-8 font-semibold leading-none tracking-[0.24px]" />
       </div>
       <div className="md:hidden">
         <Image

@@ -7,7 +7,7 @@ interface featuresArray {
   name: string;
   background: string;
   className: string;
-  textPosition: "top-left" | "top-right" | "bottom";
+  textPosition: "top-left" | "top-right" | "bottom" | "middle";
 }
 
 const features: featuresArray[] = [
@@ -51,7 +51,7 @@ const features: featuresArray[] = [
     background: "/assets/Features/Card5.svg",
     className:
       " col-span-2 md:col-span-3   row-span-1 lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-3",
-    textPosition: "top-right",
+    textPosition: "middle",
   },
   {
     name: "AI Powered DAO Governance",
@@ -92,8 +92,8 @@ function Features() {
       </h1>
 
       <BentoGrid className=" lg:grid-cols-3 auto-rows-[120px] sm:auto-rows-[120px] md:auto-rows-[170px] gap-3 sm:gap-4 md:gap-6 max-w-[1400px] mx-auto ">
-        {features.map((feature) => (
-          <BentoCard key={feature.name} {...feature} />
+        {features.map((feature, index) => (
+          <BentoCard key={feature.name} {...feature} index={index} />
         ))}
       </BentoGrid>
     </div>

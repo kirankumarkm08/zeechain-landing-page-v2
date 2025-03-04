@@ -11,7 +11,8 @@ interface BentoCardProps extends Omit<HTMLMotionProps<"div">, "className"> {
   name: string;
   className: string;
   background: string;
-  textPosition?: "top-left" | "top-right" | "bottom";
+  textPosition?: "top-left" | "top-right" | "bottom" | "middle";
+  index: any;
 }
 
 const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
@@ -33,6 +34,7 @@ const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
 
 const BentoCard = ({
   name,
+  index,
   className,
   background,
   textPosition = "top-left",
@@ -42,6 +44,7 @@ const BentoCard = ({
     "top-left": "justify-start items-start",
     "top-right": "justify-start items-end",
     bottom: "justify-end items-start",
+    middle: "justify-center items-center",
   }[textPosition];
 
   const motionProps: MotionProps = {
@@ -77,7 +80,14 @@ const BentoCard = ({
         transition={{ duration: 0.3, ease: "easeOut" }}
       >
         <motion.h3
-          className="text-24 font-clash font-medium  bg-linear-gradient bg-clip-text text-transparent"
+          className={`text-24 font-clash font-medium  bg-linear-gradient bg-clip-text text-transparent 
+             ${
+               index === 1
+                 ? "w-[300px]"
+                 : index === 5
+                 ? "w-[300px]"
+                 : "w-[258px]"
+             }`}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}

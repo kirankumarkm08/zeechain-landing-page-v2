@@ -37,7 +37,7 @@ const zeechain: Zeechain[] = [
     icon: "/assets/why_zee/zee-tech.svg",
     label: "ZEE Chain Technology",
     description:
-      "powered by Cosmos SDK, ZeeChain combines AI-driven automation, cross-chain interoperability, and modular scalability to create a seamless Web3 experience. With gasless transactions, decentralized governance, and high-performance aggregation, ZeeChain is the next evolution of blockchain infrastructure",
+      "Powered by Cosmos SDK, ZeeChain combines AI-driven automation, cross-chain interoperability, and modular scalability to create a seamless Web3 experience. With gasless transactions, decentralized governance, and high-performance aggregation, ZeeChain is the next evolution of blockchain infrastructure",
   },
 ];
 
@@ -90,7 +90,7 @@ const Whyzee = () => {
           {zeechain.map((data, index) => (
             <motion.div
               key={data.label}
-              className="w-full max-w-[580px] h-full bg-black border-b border-pink-400 rounded-3xl p-8 backdrop-blur-lg"
+              className="w-full max-w-[580px] h-full bg-black border border-pink-400 rounded-3xl p-8 backdrop-blur-xl"
               variants={cardVariants}
               initial="hidden"
               animate={controls}
@@ -106,7 +106,7 @@ const Whyzee = () => {
               <h2 className="leading-[41px] line-clamp-[-0.16px] text-32 text-white-500 font-semibold font-display">
                 {data.label}
               </h2>
-              <p className="text-14 leading-22 text-white-700 font-light font-inter mt-2">
+              <p className="text-14 leading-22 text-white-700 font-normal font-inter mt-2">
                 {data.description}
               </p>
             </motion.div>

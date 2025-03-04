@@ -18,9 +18,9 @@ export async function subscribeToNewsletter(
   }
 
   try {
-    const API_KEY = "9af35ad0e7e1effaec82b26b6b699d7b-us7";
-    const API_SERVER = "us7";
-    const AUDIENCE_ID = "17d8b607c9";
+    const API_KEY = process.env.MAILCHIMP_API_KEY;
+    const API_SERVER = process.env.MAILCHIMP_API_SERVER;
+    const AUDIENCE_ID = process.env.MAILCHIMP_AUDIENCE_ID;
 
     const response = await fetch(
       `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`,
@@ -31,12 +31,10 @@ export async function subscribeToNewsletter(
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          message: {
-            email_address: email,
-            status: "subscribed",
-            merge_fields: {
-              SUBSCRIPTION: "Active",
-            },
+          email_address: email,
+          status: "subscribed",
+          merge_fields: {
+            SUBSCRIPTION: "Active",
           },
         }),
       }
