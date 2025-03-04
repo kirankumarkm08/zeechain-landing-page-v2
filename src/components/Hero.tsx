@@ -279,7 +279,7 @@ const Hero = () => {
           Staking and Intelligent Yield Management.
         </motion.p>
         <motion.div className="mt-10 font-inter " variants={itemVariants}>
-          <CustomButton className=" px-[24px] md:px-[32xpx] py-[16px] md:py-[20px]   " />
+          <CustomButton className="  px-[24px] md:px-[32xpx] py-[16px] md:py-[20px]   " />
         </motion.div>
       </motion.div>
     </section>
