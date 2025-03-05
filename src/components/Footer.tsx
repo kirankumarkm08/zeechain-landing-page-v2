@@ -31,7 +31,7 @@ const FooterSection = ({
 const Footer = () => {
   return (
     <footer className="text-white py-12  px-10 relative  ">
-      <div className="lg:flex items-center justify-evenly max-w-[1280px] m-auto ">
+      <div className="md:flex items-center justify-evenly max-w-[1280px] m-auto ">
         <div className="flex">
           <div className="space-y-4 border-b lg:border-b-0 lg:border-r  border-lightgray pr-20">
             <div className="flex items-center gap-3">
@@ -52,7 +52,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="md:flex md:flex-row flex-col gap-10 md:gap-20 my-10 py-5 relative">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-20 my-10 py-5 relative">
           <FooterSection title="Learn" items={Learn} />{" "}
           <FooterSection title="ZEE" items={ZEE} />
           <FooterSection title="Community" items={Community} />
