@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import Background from "/public/assets/background-assets/Blockchains_bg.svg";
 import { motion, useInView } from "framer-motion";
 import { Marquee } from "@/components/magicui/marquee";
