@@ -3,46 +3,9 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Participate from "/public/assets/Blog/Participite.svg";
-import When from "/public/assets/Blog/When_test-net.svg";
-import How from "/public/assets/Blog/How_test_net.svg";
 import Arrow from "/public/assets/Blog/Arrow_right.svg";
 import Sphare from "/public/assets/background-assets/sphere.svg";
-
-interface Blog {
-  label: string;
-  description: string;
-  link: string;
-  ReadMore: string;
-  image: string | StaticImageData;
-}
-
-const Blog: Blog[] = [
-  {
-    label: "How to participate in Governance of ZeeChain",
-    image: Participate,
-    description:
-      "Be a part of ZeeChain's future! Vote on proposals, stake your tokens, and contribute to key decisions that shape the ecosystem. Join the governance and make your voice heard.",
-    link: "https://kiran-kumar-km.ghost.io/ghost/#/site",
-    ReadMore: "Read more",
-  },
-  {
-    label: "When is the Testnet arriving for ZeeChain",
-    image: When,
-    description:
-      "Get ready to experience ZeeChain! The testnet launch is just around the corner, bringing early access to developers and users. Stay tuned for updates and launch details.",
-    link: "",
-    ReadMore: "Read more",
-  },
-  {
-    label: "How to use ZeeChain Testnet",
-    image: How,
-    description:
-      "Explore ZeeChain's features risk-free on the testnet. Learn how to set up your wallet, deploy smart contracts, and interact with DeFiAI-powered services before the mainnet launch.",
-    link: "",
-    ReadMore: "Read more",
-  },
-];
+import { Blogs } from "@/constants";
 
 const Get_started = () => {
   const [ref, inView] = useInView({
@@ -62,7 +25,7 @@ const Get_started = () => {
         Get-Started with Zero Chain
       </motion.h1>
       <div ref={ref} className="grid lg:grid-cols-3 justify-center gap-5  ">
-        {Blog.map((blog, index) => (
+        {Blogs.map((blog, index) => (
           <motion.div
             key={blog.label}
             initial={{ opacity: 0, y: 50 }}

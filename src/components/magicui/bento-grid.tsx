@@ -64,7 +64,7 @@ const BentoCard = ({
       {...motionProps}
     >
       <motion.div
-        className="absolute inset-0 bg-cover bg-center   transition-opacity duration-300    hover:shadow-2xl"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-center   transition-opacity duration-300    hover:shadow-2xl"
         style={{ backgroundImage: `url(${background})` }}
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}

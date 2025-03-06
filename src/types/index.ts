@@ -23,3 +23,35 @@ export interface NavLink {
   icon: string | StaticImageData;
   dropdownItems: DropdownItem[];
 }
+export interface featuresArray {
+  name: string;
+  background: string;
+  className: string;
+  textPosition: "top-left" | "top-right" | "bottom" | "middle";
+}
+
+export interface Blockchain {
+  icon: string | StaticImageData;
+  label: string;
+}
+
+export interface featuresArray {
+  name: string;
+  background: string;
+  className: string;
+  textPosition: "top-left" | "top-right" | "bottom" | "middle";
+}
+
+export interface Zeechain {
+  icon: string;
+  label: string;
+  description: string;
+}
+
+export interface Blog {
+  label: string;
+  description: string;
+  link: string;
+  ReadMore: string;
+  image: string | StaticImageData;
+}

@@ -10,9 +10,6 @@ import Eth from "/public/assets/background-assets/Hero_Eth.svg";
 import Bitcoin from "/public/assets/background-assets/Hero_bitcoin.svg";
 import yellowish_sphere from "/public/assets/background-assets/Yellowish_sphere.svg";
 import Purplish_Sphare from "/public/assets/background-assets/Purpleish_sphere.svg";
-import Ellipse1 from "/public/assets/background-assets/Ellipse1.svg";
-import Ellipse3 from "/public/assets/background-assets/Ellipse3.svg";
-import Ellipse2 from "/public/assets/background-assets/Ellipse2.svg";
 import Star8 from "/public/assets/background-assets/star8.svg";
 import Star6 from "/public/assets/background-assets/star6.svg";
 import Star4 from "/public/assets/background-assets/star4.svg";
@@ -88,18 +85,8 @@ const Hero = () => {
     },
   };
 
-  // const ellipseAnimation = {
-  //   scale: [1, 1.05, 1],
-  //   opacity: [0.8, 1, 0.8],
-  //   transition: {
-  //     duration: 10,
-  //     repeat: Number.POSITIVE_INFINITY,
-  //     ease: "easeInOut",
-  //   },
-  // };
-
   return (
-    <section className="w-full font-display relative ">
+    <section className="w-full font-display relative bg-hero_background bg-cover bg-center    bg-no-repeat ">
       <div className="absolute inset-0 pointer-events-none ">
         <Image
           src={"/assets/background-assets/hero_left_bg.svg"}
@@ -108,68 +95,29 @@ const Hero = () => {
           width={500}
           height={100}
         />
-        <div className=" absolute top-52 lg:top-16  flex  flex-col  justify-center items-center">
-          <motion.div
-            // animate={ellipseAnimation}
-            className=" absolute   w-full flex items-center justify-center"
-          >
-            <Image
-              src={Ellipse1}
-              alt=""
-              className="w-[40vw] sm:w-[50vw] md:w-[60vw] lg:w-full max-w-[679px] h-auto"
-            />
-          </motion.div>
-
-          <motion.div
-            // animate={ellipseAnimation}
-            className=" absolute  w-full flex items-center justify-center"
-          >
-            <Image
-              src={Ellipse2}
-              alt=""
-              className="w-[70vw]  md:w-[80vw] lg:max-w-[1189px] h-auto"
-            />
-          </motion.div>
-
-          <motion.div
-            // animate={ellipseAnimation}
-            className="  w-full flex items-center justify-center"
-          >
-            <Image
-              src={Ellipse3}
-              alt=""
-              className="sm:w-[90vw] md:w-[100vw] lg:max-w-[1724px] w-full h-[748px]"
-            />
-          </motion.div>
-        </div>
-
         <motion.div
           animate={starAnimation}
           className="absolute top-32 start-44 hidden md:block"
         >
-          <Image src={Star8 || "/placeholder.svg"} alt="" />
+          <Image src={Star8} alt={"start8"} />
         </motion.div>
         <motion.div
           animate={starAnimation}
           className="absolute end-1/4 top-1/2 hidden lg:block"
         >
-          <Image src={Star6 || "/placeholder.svg"} alt="" />
+          <Image src={Star6} alt="star6" />
         </motion.div>
         <motion.div
           animate={starAnimation}
           className="absolute end-1/4 top-20 w-[18px] lg:w-auto"
         >
-          <Image src={Star4 || "/placeholder.svg"} alt="" />
+          <Image src={Star4} alt="star4" />
         </motion.div>
         <motion.div
           animate={starAnimation}
           className="absolute bottom-10 start-1/2"
         >
-          <Image
-            src={Star8 || "/placeholder.svg"}
-            alt=""
-            className="hidden md:block"
-          />
+          <Image src={Star8} alt="" className="hidden md:block" />
         </motion.div>
         <motion.div
           animate={floatAnimation}
@@ -187,11 +135,7 @@ const Hero = () => {
           animate={floatAnimation}
           className="absolute  start-32 bottom-1/4  w-[46px] md:w-auto"
         >
-          <Image
-            src={Eth || "/placeholder.svg"}
-            alt="Ethereum logo"
-            className=" "
-          />
+          <Image src={Eth} alt="Ethereum logo" className=" " />
         </motion.div>
         <motion.div className="absolute end-0 top-20 " animate={floatAnimation}>
           <Image
@@ -205,7 +149,7 @@ const Hero = () => {
           className="absolute top-2/3 end-1/4 hidden lg:flex"
         >
           <Image
-            src={Menora_2 || "/placeholder.svg"}
+            src={Menora_2}
             alt="Decorative element"
             className="hidden md:block"
           />
@@ -214,20 +158,13 @@ const Hero = () => {
           animate={floatAnimation}
           className="absolute -start-5 md:start-auto top-1/2 end-20 w-[46px] md:w-auto"
         >
-          <Image
-            src={yellowish_sphere || "/placeholder.svg"}
-            alt="Yellow sphere"
-            className=""
-          />
+          <Image src={yellowish_sphere} alt="Yellow sphere" className="" />
         </motion.div>
         <motion.div
           animate={floatAnimation}
           className="absolute top-2/3 end-5 md:end-32  w-[46px] h-[45px] md:w-auto"
         >
-          <Image
-            src={Purplish_Sphare || "/placeholder.svg"}
-            alt="Purple sphere"
-          />
+          <Image src={Purplish_Sphare} alt="Purple sphere" />
         </motion.div>
       </div>
 

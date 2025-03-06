@@ -4,40 +4,9 @@ import { useRef, useEffect, useState } from "react";
 import Image, { type StaticImageData } from "next/image";
 import Background from "/public/assets/background-assets/Blockchains_bg.svg";
 import { motion, useInView } from "framer-motion";
-import Colored_solana from "/public/assets/Blockchain-logos/solana_color_logo.png";
 import { Marquee } from "@/components/magicui/marquee";
-
-interface Blockchain {
-  icon: string | StaticImageData;
-  label: string;
-  coloredIcon?: StaticImageData;
-}
-
-const blockchains: Blockchain[] = [
-  {
-    icon: "/assets/Blockchain-logos/solana.svg",
-    label: "Solana",
-    coloredIcon: Colored_solana,
-  },
-  { icon: "/assets/Blockchain-logos/Ethereum.svg", label: "Ethereum" },
-  { icon: "assets/Blockchain-logos/polygon.svg", label: "Polygon" },
-  { icon: "/assets/Blockchain-logos/BNB.svg", label: "BNB CHAIN" },
-  { icon: "/assets/Blockchain-logos/base.svg", label: "Base" },
-  { icon: "/assets/Blockchain-logos/mantle.svg", label: "Mantle" },
-  { icon: "/assets/Blockchain-logos/mantle.svg", label: "Scroll" },
-  { icon: "/assets/Blockchain-logos/arbitrum.svg", label: "Arbitrum" },
-  { icon: "/assets/Blockchain-logos/optimism.svg", label: "Optimism" },
-  { icon: "/assets/Blockchain-logos/linea.svg", label: "Linea" },
-  { icon: "/assets/Blockchain-logos/bitcoin.svg", label: "Bitcoin" },
-  { icon: "/assets/Blockchain-logos/Stacks.svg", label: "Stacks" },
-  { icon: "/assets/Blockchain-logos/Citra.svg", label: "Citra" },
-  {
-    icon: "/assets/Blockchain-logos/Thorchain.svg",
-    label: "Thor-chain",
-  },
-  { icon: "/assets/Blockchain-logos/avalanche.svg", label: "Avalanche" },
-  { icon: "/assets/Blockchain-logos/Manta.svg", label: "Manta" },
-];
+import { blockchains } from "@/constants";
+import { Blockchain } from "@/types";
 
 const container = {
   hidden: { opacity: 0 },
@@ -78,7 +47,7 @@ export default function Blockchains() {
     <div className="flex flex-row items-center justify-center px-4 gap-2 group">
       <div className="relative w-8 h-8 flex-shrink-0">
         <Image
-          src={chain.icon || "/placeholder.svg"}
+          src={chain.icon}
           alt={`${chain.label} logo`}
           className={`transition-transform hover:scale-110`}
           fill
@@ -96,7 +65,7 @@ export default function Blockchains() {
       className="relative py-20 px-4 sm:px-6 md:px-8 lg:px-20 "
     >
       <Image
-        src={Background || "/placeholder.svg"}
+        src={Background}
         alt="bg"
         className="absolute blur-lg -top-2/3 start-32 opacity-95 shrink-0"
       />
