@@ -1,6 +1,7 @@
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import { motion, type MotionProps, type HTMLMotionProps } from "framer-motion";
+// import Image from "next/image";
 
 interface BentoGridProps extends ComponentPropsWithoutRef<typeof motion.div> {
   children: ReactNode;
@@ -61,12 +62,14 @@ const BentoCard = ({
       {...motionProps}
     >
       <motion.div
-        className="absolute inset-0  bg-no-repeat bg-center  bg-cover  transition-opacity duration-300    hover:shadow-2xl"
+        className="absolute inset-0  bg-no-repeat   bg-cover px-56  transition-opacity duration-300    hover:shadow-2xl"
         style={{ backgroundImage: `url(${background})` }}
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
         transition={{ ease: "easeOut" }}
       />
+
+      {/* <Image src={background} alt="bg" width={500} height={100} className="" /> */}
       <motion.div
         className={cn(
           "relative z-10 flex h-full w-full flex-col p-6",

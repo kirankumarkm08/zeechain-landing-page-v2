@@ -30,7 +30,7 @@ const FooterSection = ({
 
 const Footer = () => {
   return (
-    <footer className=" py-12 px-10 relative    ">
+    <footer className=" md:py-12 md:px-10 relative    ">
       <div className="md:flex items-center  max-w-[1440px] md:mx-auto mx-10 ">
         <div className="flex ">
           <div className="border-b lg:border-b-0 lg:border-r  border-lightgray pr-20 ">

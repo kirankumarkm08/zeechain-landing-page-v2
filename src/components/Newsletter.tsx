@@ -39,13 +39,13 @@ const Newsletter = () => {
   );
 
   return (
-    <div className="mx-auto my-20 py-20 relative">
+    <div className="mx-auto  py-20 relative">
       <Image
         src={"/assets/background-assets/Circle.svg"}
         alt={"Circle"}
         width={290}
         height={290}
-        className=" absolute"
+        className=" absolute w-[100px] h-[100px] md:w-auto md:h-auto "
       />
       <div className="flex flex-col items-center pt-20 relative">
         <h1 className="bg-text-top-buttom-linear bg-clip-text text-transparent text-20 md:text-40 font-semibold font-display leading-166">
