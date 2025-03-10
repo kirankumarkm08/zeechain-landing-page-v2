@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
 import CustomButton from "./Register-Btn";
 import { heroAnimations } from "@/components/Animations/Hero_Animation";
-import { DECORATIVE_ELEMENTS } from "@/constants";
+// import { DECORATIVE_ELEMENTS } from "@/constants";
 import { DECORATIVE_ELEMENT } from "@/types";
 
 const Hero = () => {
