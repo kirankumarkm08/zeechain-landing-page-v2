@@ -64,11 +64,11 @@ const BentoCard = ({
       {...motionProps}
     >
       <motion.div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-center   transition-opacity duration-300    hover:shadow-2xl"
+        className="absolute inset-0  bg-no-repeat bg-center  bg-cover  transition-opacity duration-300    hover:shadow-2xl"
         style={{ backgroundImage: `url(${background})` }}
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
+        transition={{ ease: "easeOut" }}
       />
       <motion.div
         className={cn(
@@ -77,7 +77,7 @@ const BentoCard = ({
         )}
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.3, ease: "easeOut" }}
+        transition={{ ease: "easeOut" }}
       >
         <motion.h3
           className={`text-24 font-clash font-medium  bg-linear-gradient bg-clip-text text-transparent 
@@ -90,7 +90,7 @@ const BentoCard = ({
              }`}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
+          transition={{ ease: "easeOut" }}
         >
           {name}
         </motion.h3>

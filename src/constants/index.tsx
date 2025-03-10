@@ -5,6 +5,7 @@ import type {
   featuresArray,
   Zeechain,
   Blog,
+  DECORATIVE_ELEMENT,
 } from "@/types";
 import Arrow_down from "/public/assets/navbar/Arrow-down.svg";
 
@@ -294,5 +295,78 @@ export const Blogs: Blog[] = [
       "Explore ZeeChain's features risk-free on the testnet. Learn how to set up your wallet, deploy smart contracts, and interact with DeFiAI-powered services before the mainnet launch.",
     link: "",
     ReadMore: "Read more",
+  },
+];
+
+export const DECORATIVE_ELEMENTS: DECORATIVE_ELEMENT[] = [
+  {
+    src: "/assets/background-assets/star8.svg",
+    alt: "Decorative star",
+    className:
+      "absolute top-32 left-44 hidden md:block w-[32px] md:w-[48px] lg:w-[65px] h-[30px] md:h-[45px] lg:h-[60px]",
+    animation: "star",
+  },
+  {
+    src: "/assets/background-assets/star6.svg",
+    alt: "Decorative star",
+    className:
+      "absolute right-1/4 top-1/2 hidden lg:block w-[32px] lg:w-[65px] h-[30px] lg:h-[60px]",
+    animation: "star",
+  },
+  {
+    src: "/assets/background-assets/star4.svg",
+    alt: "Decorative star",
+    className:
+      "absolute right-1/4 top-20 w-[18px] md:w-[36px] lg:w-[54px] h-[15px] md:h-[30px] lg:h-[46px]",
+    animation: "star",
+  },
+  {
+    src: "/assets/background-assets/star8.svg",
+    alt: "Decorative star",
+    className:
+      "absolute bottom-10 left-1/2 hidden md:block w-[32px] md:w-[48px] lg:w-[65px] h-[30px] md:h-[45px] lg:h-[60px]",
+    animation: "star",
+  },
+  {
+    src: "/assets/background-assets/Hero_monera-1.svg",
+    alt: "Decorative monera",
+    className:
+      "absolute top-1/4 left-0 w-[44px] md:w-[103px] lg:w-[206px] h-[44px] md:h-[102px] lg:h-[205px]",
+    animation: "float",
+  },
+  {
+    src: "/assets/background-assets/Hero_Eth.svg",
+    alt: "Ethereum logo",
+    className:
+      "absolute left-32 bottom-1/4 w-[46px] md:w-[97px] lg:w-[194px] h-[46px] md:h-[97px] lg:h-[194px]",
+    animation: "float",
+  },
+  {
+    src: "/assets/background-assets/Hero_bitcoin.svg",
+    alt: "Bitcoin logo",
+    className:
+      "absolute right-0 top-20 w-[25px] md:w-[48px] lg:w-[97px] h-[29px] md:h-[53px] lg:h-[107px] mr-5",
+    animation: "float",
+  },
+  {
+    src: "/assets/background-assets/Hero_monera-2.svg",
+    alt: "Decorative monera",
+    className:
+      "absolute top-2/3 right-1/4 hidden lg:flex w-[152px] xl:w-[305px] h-[152px] xl:h-[305px]",
+    animation: "float",
+  },
+  {
+    src: "/assets/background-assets/Yellowish_sphere.svg",
+    alt: "Yellow sphere",
+    className:
+      "absolute -left-5 md:left-auto top-1/2 right-20 w-[46px] md:w-[65px] lg:w-[130px] h-[46px] md:h-[65px] lg:h-[130px] lg:w-[130px]",
+    animation: "float",
+  },
+  {
+    src: "/assets/background-assets/Purpleish_sphere.svg",
+    alt: "Purple sphere",
+    className:
+      "absolute top-2/3 right-5 md:right-32 w-[46px] md:w-[128px] lg:w-[256px] h-[45px] md:h-[128px] lg:h-[256px]",
+    animation: "float",
   },
 ];

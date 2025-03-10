@@ -8,6 +8,7 @@ import LeftEllipse from "/public/assets/background-assets/left_Ellipse.svg";
 import Ellipse from "/public/assets/background-assets/Eclipse.svg";
 import Rectangle from "/public/assets/background-assets/Rectangle.svg";
 import { zeechain } from "@/constants";
+import { cardVariants } from "./Animations/Why_zee";
 
 const Whyzee = () => {
   const controls = useAnimation();
@@ -21,18 +22,6 @@ const Whyzee = () => {
       controls.start("visible");
     }
   }, [controls, inView]);
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.2,
-        duration: 0.5,
-      },
-    }),
-  };
 
   return (
     <div className="relative">
@@ -51,12 +40,12 @@ const Whyzee = () => {
         alt="Background Left Ellipse"
         className="absolute top-1/2 start-0"
       />
-      <div className="py-20 px-4 mx-auto max-w-[1440px] relative">
+      <div className="py-20  mx-auto max-w-[1440px] relative ">
         <h1 className="text-center mb-12 text-20 md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide">
           Why ZEE Chain?
         </h1>
         <div
-          className="grid md:grid-cols-1 lg:grid-cols-2 gap-14 place-items-center md:mx-20 -z-10"
+          className="grid  lg:grid-cols-2 gap-10 md:gap-14 place-items-center mx-5 md:mx-20 -z-10"
           ref={ref}
         >
           {zeechain.map((data, index) => (

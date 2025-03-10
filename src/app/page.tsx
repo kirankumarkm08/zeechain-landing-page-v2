@@ -8,7 +8,7 @@ import Newsletter from "@/components/Newsletter";
 
 const page = () => {
   return (
-    <div className="  overflow-hidden">
+    <div className=" overflow-hidden ">
       <Hero />
       <Blockchains />
       <Features />

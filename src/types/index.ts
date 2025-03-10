@@ -35,13 +35,6 @@ export interface Blockchain {
   label: string;
 }
 
-export interface featuresArray {
-  name: string;
-  background: string;
-  className: string;
-  textPosition: "top-left" | "top-right" | "bottom" | "middle";
-}
-
 export interface Zeechain {
   icon: string;
   label: string;
@@ -54,4 +47,13 @@ export interface Blog {
   link: string;
   ReadMore: string;
   image: string | StaticImageData;
+}
+
+export interface DECORATIVE_ELEMENT {
+  src: string;
+  alt: string;
+  className: string;
+  animation: string;
+  // height: number;
+  // width: number;
 }

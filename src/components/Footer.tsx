@@ -18,7 +18,7 @@ const FooterSection = ({
         <li key={item.title}>
           <Link
             href={item.link}
-            className="hover:text-white-200 capitalize text-white-800 font-inter text-16  "
+            className="hover:text-white-800 capitalize text-white-100 font-inter text-16 font-normal  "
           >
             {item.title}
           </Link>
@@ -30,10 +30,10 @@ const FooterSection = ({
 
 const Footer = () => {
   return (
-    <footer className="text-white py-12  px-10 relative  ">
-      <div className="md:flex items-center justify-evenly max-w-[1280px] m-auto ">
-        <div className="flex">
-          <div className="space-y-4 border-b lg:border-b-0 lg:border-r  border-lightgray pr-20">
+    <footer className=" py-12 px-10 relative    ">
+      <div className="md:flex items-center  max-w-[1440px] md:mx-auto mx-10 ">
+        <div className="flex ">
+          <div className="border-b lg:border-b-0 lg:border-r  border-lightgray pr-20 ">
             <div className="flex items-center gap-3">
               <Image
                 src={"/assets/zeechain-logo.svg"}
@@ -41,18 +41,15 @@ const Footer = () => {
                 width={200}
                 height={100}
               />
-              {/* <span className="text-white-500 font-semibold text-[24px] leading-[30px]">
-                ZEE Chain
-              </span> */}
             </div>
-            <p className="text-white-200 max-w-xs text-[16px] font-inter font-light">
+            <p className="text-white-500 max-w-lg text-start text-[16px] font-inter font-normal">
               ZeeChain is the first AI-driven DeFi Layer 1, merging Cosmos
               interoperability with intelligent swaps, lending, and staking.
               Experience the future of decentralized finance with AI automation
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-20 my-10 py-5 relative">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-20 my-10  relative ml:0  md:ml-32">
           <FooterSection title="Learn" items={Learn} />{" "}
           <FooterSection title="ZEE" items={ZEE} />
           <FooterSection title="Community" items={Community} />

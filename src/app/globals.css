@@ -4,7 +4,7 @@
 
 body {
   font-style: normal;
-  scroll-behavior: smooth;
+
   background-color: #09090a;
 }
 
@@ -13,9 +13,9 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
-  background-image: url("/assets/background-assets/Noise_Texture.svg");
+  background-image: url("/assets/background-assets/Noise & Texture.svg");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.5;
