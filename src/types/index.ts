@@ -49,11 +49,11 @@ export interface Blog {
   image: string | StaticImageData;
 }
 
-export interface DECORATIVE_ELEMENT {
+export type DECORATIVE_ELEMENT = {
   src: string;
   alt: string;
   className: string;
   animation: string;
-  // height: number;
-  // width: number;
-}
+  width: number;
+  height: number;
+};

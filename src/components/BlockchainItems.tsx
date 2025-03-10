@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Blockchain } from "@/types";
 
 const BlockchainItems = ({ chain }: { chain: Blockchain }) => (
-  <div className="flex flex-row items-center place-items-center justify-items-center px-4 gap-2 group">
+  <div className="flex flex-row items-center  justify-center px-4 gap-2 group">
     <div className="relative w-8 h-8 flex-shrink-0">
       <Image
         src={chain.icon}

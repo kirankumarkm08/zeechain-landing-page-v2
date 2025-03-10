@@ -5,8 +5,8 @@ import Image from "next/image";
 import Background from "/public/assets/background-assets/Blockchains_bg.svg";
 import { motion, useInView } from "framer-motion";
 import { Marquee } from "@/components/magicui/marquee";
-import { blockchains } from "@/constants";
-import { container, item } from "./Animations/Blockchain";
+import { blockchains, lastRowBlockchains } from "@/constants";
+import { container, item } from "./Animations/Blockchain_animation";
 import BlockchainItems from "./BlockchainItems";
 
 export default function Blockchains() {
@@ -20,6 +20,8 @@ export default function Blockchains() {
     window.addEventListener("resize", checkIfMobile);
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
+
+  const allBlockchains = [...blockchains, null, ...lastRowBlockchains, null];
 
   return (
     <section
@@ -49,22 +51,37 @@ export default function Blockchains() {
             ))}
           </Marquee>
         ) : (
+          // <div className=""></div>
           <motion.div
             variants={container}
             initial="hidden"
-            animate={isInView ? "show" : "hidden"}
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-y-8 sm:gap-x-6 sm:gap-y-10 md:gap-8 lg:gap-[40px] max-w-[1440px] mx-auto justify-items-start"
+            animate="show"
+            className="max-w-[1440px] mx-auto"
           >
-            {blockchains.map((chain) => (
-              <motion.div
-                key={chain.label}
-                variants={item}
-                whileHover={{ scale: 1.05 }}
-                className="flex justify-center items-center"
-              >
-                <BlockchainItems chain={chain} />
-              </motion.div>
-            ))}
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-16">
+              {allBlockchains.map((chain, index) => {
+                // Skip rendering for null items (empty columns in last row)
+                if (chain === null) {
+                  return (
+                    <div
+                      key={`empty-${index}`}
+                      className="lg:block hidden"
+                    ></div>
+                  );
+                }
+
+                return (
+                  <motion.div
+                    key={chain.label || `item-${index}`}
+                    variants={item}
+                    whileHover={{ scale: 1.05 }}
+                    className="flex items-center space-x-3"
+                  >
+                    <BlockchainItems chain={chain} />
+                  </motion.div>
+                );
+              })}
+            </div>
           </motion.div>
         )}
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-lightgray to-transparent my-16" />
