@@ -105,7 +105,7 @@ const Hero = () => {
   } = heroAnimations;
 
   return (
-    <section className="w-full font-display relative bg-hero_background bg-cover bg-center bg-no-repeat">
+    <section className="w-full font-display relative bg-hero_background bg-cover bg-center bg-no-repeat ">
       <div className="absolute inset-0 top-0 pointer-events-none">
         <Image
           src="/assets/background-assets/hero_left_bg.svg"
@@ -133,7 +133,7 @@ const Hero = () => {
       </div>
 
       <motion.div
-        className="text-white-200 flex flex-col items-center justify-center min-h-screen relative  z-10 px-4"
+        className="text-white-200 flex flex-col items-center justify-center h-screen relative  z-10 px-4"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -175,7 +175,7 @@ const Hero = () => {
         </motion.h2>
 
         <motion.p
-          className="max-w-[648px] flex items-center text-center leading-snug text-14s lg:text-18 text-white-700 font-normal font-inter"
+          className="max-w-[648px] flex items-center text-center leading-snug text-14 px-10 lg:text-18 text-white-700 font-normal font-inter"
           variants={itemVariants}
         >
           ZeeChain is the First DeFiAI L1 BlockChain fulfilling all your

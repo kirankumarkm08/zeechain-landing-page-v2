@@ -24,16 +24,15 @@ export default function Blockchains() {
   const allBlockchains = [...blockchains, null, ...lastRowBlockchains, null];
 
   return (
-    <section
-      ref={ref}
-      className="relative py-10 px-4 sm:px-6 md:px-8 lg:px-20  "
-    >
-      <div className="max-w-[1440px] mx-auto relative  ">
+    <section ref={ref} className="relative py-10 px-4 sm:px-6 md:px-8   ">
+      <div className="max-w-[1440px] mx-auto relative   ">
         {" "}
         <Image
           src={Background}
           alt="bg"
-          className="absolute blur-lg -top-2/3 start-32 opacity-95 shrink-0 "
+          className="absolute blur-lg -top-2/3 start-32 opacity-95 shrink-0 w-full h-full"
+          width={1000}
+          height={1000}
         />
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-lightgray to-transparent my-10" />
         <motion.h1

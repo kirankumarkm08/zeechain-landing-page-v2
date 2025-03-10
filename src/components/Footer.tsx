@@ -1,37 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Learn, ZEE, Community } from "@/constants";
-
-const FooterSection = ({
-  title,
-  items,
-}: {
-  title: string;
-  items: { title: string; link: string }[];
-}) => (
-  <div>
-    <h3 className="text-24 font-semibold mb-4 text-white-100 font-display">
-      {title}
-    </h3>
-    <ul className="space-y-2">
-      {items.map((item) => (
-        <li key={item.title}>
-          <Link
-            href={item.link}
-            className="hover:text-white-800 capitalize text-white-100 font-inter text-16 font-normal  "
-          >
-            {item.title}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </div>
-);
+import FooterSection from "@/components/FooterSection";
 
 const Footer = () => {
   return (
     <footer className=" md:py-12 md:px-10 relative    ">
-      <div className="md:flex items-center  max-w-[1440px] md:mx-auto mx-10 ">
+      <div className="md:flex items-center  max-w-[1440px]   mx-auto ">
         <div className="flex ">
           <div className="border-b lg:border-b-0 lg:border-r  border-lightgray pr-20 ">
             <div className="flex items-center gap-3">
@@ -58,9 +32,9 @@ const Footer = () => {
       <Image
         src="/assets/background-assets/footer_grafient.svg"
         alt="bg-gradient"
-        width={100}
-        height={100}
-        className=" absolute blur-sm bottom-0 w-full h-full start-0 -z-10"
+        width={1000}
+        height={1000}
+        className=" absolute blur-sm bottom-0 w-full h-auto start-0 -z-10"
       />
     </footer>
   );

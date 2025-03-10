@@ -86,7 +86,7 @@ function Features() {
         Features of ZEE Chain
       </h1>
 
-      <BentoGrid className="grid md:grid-cols-2 lg:grid-cols-3 auto-rows-[120px] sm:auto-rows-[120px] md:auto-rows-[170px] gap-5 sm:gap-4 py-5 md:gap-6 max-w-[1400px] mx-auto px-5 ">
+      <BentoGrid className="grid md:grid-cols-1 lg:grid-cols-3 auto-rows-[120px] sm:auto-rows-[120px] md:auto-rows-[170px] gap-5 sm:gap-4 py-5 md:gap-6 max-w-[1400px] mx-auto px-5 ">
         {features.map((feature, index) => (
           <BentoCard key={feature.name} {...feature} index={index} />
         ))}
