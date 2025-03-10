@@ -66,7 +66,7 @@ function Features() {
   ];
 
   return (
-    <div className="px-3  sm:p-6 md:p-8  relative   ">
+    <div className="px-3  sm:p-6   relative   ">
       <Image
         src={"/assets/background-assets/Features_left_bg.svg"}
         alt="background"
