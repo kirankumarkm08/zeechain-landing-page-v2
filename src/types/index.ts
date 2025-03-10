@@ -57,3 +57,7 @@ export type DECORATIVE_ELEMENT = {
   width: number;
   height: number;
 };
+
+export interface NavDropdownProps {
+  items: DropdownItem[];
+}

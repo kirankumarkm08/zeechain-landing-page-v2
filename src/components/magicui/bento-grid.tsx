@@ -18,10 +18,7 @@ interface BentoCardProps extends Omit<HTMLMotionProps<"div">, "className"> {
 const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
   return (
     <motion.div
-      className={cn(
-        "grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
-        className
-      )}
+      className={cn("grid w-full grid-cols-1  md:grid-cols-3 gap-6", className)}
       {...props}
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}

@@ -40,18 +40,18 @@ const Whyzee = () => {
         alt="Background Left Ellipse"
         className="absolute top-1/2 start-0"
       />
-      <div className="py-20  mx-auto max-w-[1440px] relative ">
-        <h1 className="text-center mb-12 text-20 md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide">
+      <div className="  mx-auto max-w-[1440px] relative  my-20 ">
+        <h1 className="text-center  text-20 md:text-40 my-5 font-semibold bg-Section-title-gradient bg-clip-text text-transparent font-display leading-166 tracking-wide">
           Why ZEE Chain?
         </h1>
         <div
-          className="grid  lg:grid-cols-2 gap-10 md:gap-14 place-items-center mx-5 md:mx-20 -z-10"
+          className="grid  lg:grid-cols-2  gap-10  mx-5 md:mx-32 -z-10 justify-center"
           ref={ref}
         >
           {zeechain.map((data, index) => (
             <motion.div
               key={data.label}
-              className="w-full max-w-[580px] h-full bg-black border border-pink-400 rounded-3xl p-8 backdrop-blur-xl"
+              className="w-full max-w-[580px] h-full bg-black border border-pink-400 rounded-3xl px-8 py-4 backdrop-blur-xl"
               variants={cardVariants}
               initial="hidden"
               animate={controls}

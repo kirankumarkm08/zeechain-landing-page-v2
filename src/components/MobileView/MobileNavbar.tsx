@@ -1,21 +1,16 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { navLinks } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
 import CustomButton from "../Register-Btn";
 
 const MobileNavbar = () => {
-  const [openDropdowns, setOpenDropdowns] = useState<{
-    [key: string]: boolean;
-  }>({});
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const toggleDropdown = (label: string) => {
-    setOpenDropdowns((prev) => ({
-      ...prev,
-      [label]: !prev[label],
-    }));
+    setOpenDropdown(openDropdown === label ? null : label);
   };
 
   return (
@@ -34,13 +29,13 @@ const MobileNavbar = () => {
               width={20}
               height={20}
               className={
-                openDropdowns[nav.label]
+                openDropdown === nav.label
                   ? "rotate-180 duration-300"
                   : "duration-300"
               }
             />
           </button>
-          {openDropdowns[nav.label] && nav.dropdownItems && (
+          {openDropdown === nav.label && nav.dropdownItems && (
             <div className="px-4 py-2 my-2">
               {nav.dropdownItems.map((item) => (
                 <Link
