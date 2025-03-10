@@ -20,7 +20,7 @@ const Get_started = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="text-center mb-12 text-20 md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide mx-20"
+        className="text-center mb-12 text-24 md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide mx-20"
       >
         Get-Started with Zero Chain
       </motion.h1>
@@ -34,7 +34,7 @@ const Get_started = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className=" rounded-3xl mx-3 border border-pink-500 p-[24px]  bg-card_background flex flex-col items-center gap-7 leading-30 line-extra-tight"
+            className=" rounded-3xl mx-2 border border-pink-500 p-[24px]  bg-card_background flex flex-col items-center gap-7 leading-30 line-extra-tight"
           >
             <Image
               src={blog.image}
@@ -46,7 +46,7 @@ const Get_started = () => {
             <h2 className="font-medium text-white-600 text-24 leading-32  font-display ">
               {blog.label}
             </h2>
-            <p className="font-normal text-14 leading-20 text-white-700 border-b border-gray-200 pb-2 leading-22 font-inter">
+            <p className="font-normal  text-14 leading-20 text-white-700 border-b border-gray-200 pb-2 leading-22 font-inter">
               {blog.description}
             </p>
 

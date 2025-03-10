@@ -41,7 +41,7 @@ const Whyzee = () => {
         className="absolute top-1/2 start-0"
       />
       <div className="  mx-auto max-w-[1440px] relative  my-20 ">
-        <h1 className="text-center  text-20 md:text-40 my-5 font-semibold bg-Section-title-gradient bg-clip-text text-transparent font-display leading-166 tracking-wide">
+        <h1 className="text-center  text-24 md:text-40 my-5 font-semibold bg-Section-title-gradient bg-clip-text text-transparent font-display leading-166 tracking-wide">
           Why ZEE Chain?
         </h1>
         <div

@@ -26,7 +26,7 @@ export default function Blockchains() {
   return (
     <section
       ref={ref}
-      className="relative py-20 px-4 sm:px-6 md:px-8 lg:px-20  "
+      className="relative py-10 px-4 sm:px-6 md:px-8 lg:px-20  "
     >
       <div className="max-w-[1440px] mx-auto relative  ">
         {" "}
@@ -40,7 +40,7 @@ export default function Blockchains() {
           initial={{ opacity: 0, y: -20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center mb-12 text-2xl sm:text-3xl md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide"
+          className="text-center my-10 text-24 sm:text-3xl md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide"
         >
           Seamlessly access all Blockchains
         </motion.h1>

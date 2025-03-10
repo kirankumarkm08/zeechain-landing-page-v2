@@ -11,7 +11,7 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ items }) => {
   }
 
   return (
-    <div className="absolute top-[40px] left-0 bg-[#141414] shadow-lg rounded-xl py-4 w-[390px] z-50 justify-between items-center">
+    <div className="absolute top-[40px] left-0 bg-navar_bg shadow-lg rounded-xl py-4  w-[390px] min-w-[390px]  z-50 justify-between items-center">
       {items.map((item) => (
         <Link
           key={item.title}

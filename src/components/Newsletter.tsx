@@ -12,14 +12,20 @@ function SubmitButton() {
   return (
     <button
       type="submit"
-      className="bg-button_bg px-6 py-3 rounded-full text-white-300 uppercase font-semibold text-sm md:text-16 flex items-center"
+      className="bg-button_bg p-2 md:px-6 md:py-3 rounded-full text-white-300 uppercase font-semibold text-sm md:text-16 flex items-center"
       disabled={pending}
     >
       {pending ? (
         <div className="w-4 h-4 border-2 border-white-300 border-t-transparent rounded-full animate-spin" />
       ) : (
         <>
-          <Image src={Send} alt="send image" className="md:hidden    " />
+          <Image
+            src={Send}
+            alt="send image"
+            className="md:hidden   "
+            width={20}
+            height={20}
+          />
           <span className="hidden md:inline ">Subscribe Now</span>
         </>
       )}
@@ -39,7 +45,7 @@ const Newsletter = () => {
   );
 
   return (
-    <div className="mx-auto  py-20 relative">
+    <div className="mx-auto  py-5 md:py-20 relative">
       <Image
         src={"/assets/background-assets/Circle.svg"}
         alt={"Circle"}
@@ -47,7 +53,7 @@ const Newsletter = () => {
         height={290}
         className=" absolute w-[100px] h-[100px] md:w-auto md:h-auto "
       />
-      <div className="flex flex-col items-center pt-20 relative">
+      <div className="flex flex-col items-center pt-10 relative">
         <h1 className="bg-text-top-buttom-linear bg-clip-text text-transparent text-20 md:text-40 font-semibold font-display leading-166">
           Newsletter Section
         </h1>
@@ -61,7 +67,7 @@ const Newsletter = () => {
           <input
             type="email"
             name="email"
-            className="bg-card_background rounded-full px-6 py-4 w-[300px] md:w-[400px] outline-none text-white-300 relative"
+            className="bg-black rounded-full px-6 py-4 w-[300px] md:w-[400px] outline-none text-white-300 relative"
             placeholder="Enter your email"
             required
           />

@@ -42,7 +42,7 @@ const Footer = () => {
                 height={100}
               />
             </div>
-            <p className="text-white-500 max-w-lg text-start text-[16px] font-inter font-normal">
+            <p className="text-white-500  w-full md:max-w-lg text-start text-[16px] font-inter font-normal">
               ZeeChain is the first AI-driven DeFi Layer 1, merging Cosmos
               interoperability with intelligent swaps, lending, and staking.
               Experience the future of decentralized finance with AI automation
@@ -58,9 +58,9 @@ const Footer = () => {
       <Image
         src="/assets/background-assets/footer_grafient.svg"
         alt="bg-gradient"
-        width={1675}
-        height={1105}
-        className=" absolute blur-sm bottom-0 w-full start-0 -z-10"
+        width={100}
+        height={100}
+        className=" absolute blur-sm bottom-0 w-full h-full start-0 -z-10"
       />
     </footer>
   );

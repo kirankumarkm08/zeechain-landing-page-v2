@@ -127,6 +127,7 @@ export default {
         email_card: "#222631",
         lightgray: "rgba(255, 255, 255, 0.15)",
         background_card: "rgba(9, 9, 10, 0.90)",
+        navar_bg: "#141414",
       },
       lineHeight: {
         "16": "16px",

@@ -86,7 +86,7 @@ export const navLinks: NavLink[] = [
     ],
   },
   {
-    label: "Recources",
+    label: "Resources",
     icon: Arrow_down,
     dropdownItems: [
       {
