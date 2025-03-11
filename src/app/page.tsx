@@ -8,11 +8,11 @@ import Newsletter from "@/components/Newsletter";
 
 const page = () => {
   return (
-    <div className=" ">
+    <div className="overflow-hidden ">
       <Hero />
       <Blockchains />
       <Features />
-      {/* <Whyzee /> */}
+      <Whyzee />
       <Blog />
       <Newsletter />
     </div>

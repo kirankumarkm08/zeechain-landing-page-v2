@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import LeftEllipse from "/public/assets/background-assets/left_Ellipse.svg";
-import Ellipse from "/public/assets/background-assets/Eclipse.svg";
+// import Ellipse from "/public/assets/background-assets/Eclipse.svg";
 import Rectangle from "/public/assets/background-assets/Rectangle.svg";
 import { zeechain } from "@/constants";
 import { cardVariants } from "./Animations/Why_zee";
@@ -25,11 +25,11 @@ const Whyzee = () => {
 
   return (
     <div className="relative">
-      <Image
+      {/* <Image
         src={Ellipse}
         alt="Background Ellipse"
         className="absolute left-1/4 -top-10"
-      />
+      /> */}
       <Image
         src={Rectangle}
         alt="Background Rectangle"

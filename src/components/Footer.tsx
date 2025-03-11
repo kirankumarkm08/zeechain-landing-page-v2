@@ -23,7 +23,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-20 my-10  relative ml:0  md:ml-32">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-20 my-10  relative ml-0  md:ml-32">
           <FooterSection title="Learn" items={Learn} />{" "}
           <FooterSection title="ZEE" items={ZEE} />
           <FooterSection title="Community" items={Community} />

@@ -192,7 +192,7 @@ export const features: featuresArray[] = [
     name: "100% Gas-less Protocol",
     background: "/assets/Features/Card1.svg",
     className:
-      "col-span-2 md:col-span-3  row-span-3   col-start-1 lg:col-start-1 lg:col-end-1 lg:row-end-3",
+      "col-span-2 md:col-span-3  row-span-3   col-start-1 lg:col-start-2 lg:col-end-1 lg:row-end-3",
     textPosition: "top-left",
   },
   {

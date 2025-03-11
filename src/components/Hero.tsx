@@ -110,7 +110,7 @@ const Hero = () => {
         <Image
           src="/assets/background-assets/hero_left_bg.svg"
           alt="Decorative background element"
-          className="top-0 start-0 blur-lg"
+          className="top-0 start-0 blur-lg w-auto h-auto"
           width={500}
           height={100}
         />
