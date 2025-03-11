@@ -4,7 +4,7 @@ import FooterSection from "@/components/FooterSection";
 
 const Footer = () => {
   return (
-    <footer className=" md:py-12 px-20 md:px-10 relative    ">
+    <footer className=" md:py-12 px-5 md:px-10 relative    ">
       <div className="md:flex items-center  max-w-[1440px]   mx-auto ">
         <div className="flex ">
           <div className="border-b lg:border-b-0 lg:border-r  border-lightgray pr-20 ">
@@ -23,19 +23,22 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-20 my-10  relative ml-0  lg:ml-28">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-20 py-10    ml-0  lg:ml-28">
           <FooterSection title="Learn" items={Learn} />{" "}
           <FooterSection title="ZEE" items={ZEE} />
           <FooterSection title="Community" items={Community} />
         </div>
       </div>
-      <Image
-        src="/assets/background-assets/footer_grafient.svg"
-        alt="bg-gradient"
-        width={1000}
-        height={1000}
-        className=" absolute blur-sm bottom-0 w-full h-auto start-0 -z-10"
-      />
+      <div className="absolute inset-0 -top-1/2 ">
+        <Image
+          src="/assets/background-assets/footer_grafient.svg"
+          alt="Background gradient"
+          fill
+          sizes="100vw"
+          className="object-cover blur-lg -z-10 w-auto h-full"
+          style={{ objectPosition: "center" }}
+        />
+      </div>
     </footer>
   );
 };

@@ -139,7 +139,7 @@ const Hero = () => {
         animate="visible"
       >
         <motion.button
-          className="group  bg-background_card border-lightgray rounded-full border px-4 py-2 text-white-100 transition-all duration-300 mb-10 font-inter"
+          className="group  bg-background_card border-lightgray rounded-full border px-4 py-2 text-white-100 transition-all duration-300 mb-10 font-inter relative"
           variants={buttonVariants}
           initial="initial"
           whileHover="hover"
