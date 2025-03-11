@@ -23,7 +23,7 @@ function Features() {
     },
     {
       name: "Smarter Yield Optimization",
-      background: "/assets/Features/Card3.svg",
+      background: "/assets/Features/Card3.s`vg",
       className:
         "col-span-2 md:col-span-3  row-span-1 col-start-1 row-span-4 lg:col-start-3  lg:col-end-3 lg:-row-start-2 lg:row-end-3",
       textPosition: "top-left",
@@ -82,7 +82,7 @@ function Features() {
         className="  absolute  rotate-180  top-32 end-0 blur-lg shrink-0"
       />
 
-      <h1 className="text-center my-10 text-24 sm:text-3xl md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide">
+      <h1 className="text-center  mb-12 text-24 sm:text-3xl md:text-24 lg:text-40  font-semibold bg-Section-title-gradient bg-clip-text text-transparent font-display leading-166  tracking-wide  relative">
         Features of ZEE Chain
       </h1>
 
