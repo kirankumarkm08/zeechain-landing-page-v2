@@ -4,7 +4,7 @@ import FooterSection from "@/components/FooterSection";
 
 const Footer = () => {
   return (
-    <footer className=" md:py-12 px-5 md:px-10 relative    ">
+    <footer className=" md:py-12 px-20 md:px-10 relative    ">
       <div className="md:flex items-center  max-w-[1440px]   mx-auto ">
         <div className="flex ">
           <div className="border-b lg:border-b-0 lg:border-r  border-lightgray pr-20 ">
@@ -23,7 +23,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-20 my-10  relative ml-0  md:ml-32">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-20 my-10  relative ml-0  lg:ml-28">
           <FooterSection title="Learn" items={Learn} />{" "}
           <FooterSection title="ZEE" items={ZEE} />
           <FooterSection title="Community" items={Community} />

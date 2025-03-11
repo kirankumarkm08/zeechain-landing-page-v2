@@ -7,6 +7,7 @@ import { navLinks } from "@/constants";
 import MobileNavbar from "./MobileView/MobileNavbar";
 import CustomButton from "./Register-Btn";
 import NavDropdown from "./NavDropdown";
+import HamburgerMenu from "./MobileView/Hamburger_menu";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -55,7 +56,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <div key={nav.label} className="relative group">
               <button
-                className="text-white-500 flex items-center justify-center gap-2 text-14 font-inter font-medium leading-loose"
+                className="text-white-500 flex items-center justify-center gap-2 text-14 font-inter font-medium leading-loose transition-all duration-300"
                 onClick={() => toggleDropdown(nav.label)}
               >
                 {nav.label}
@@ -66,8 +67,8 @@ const Navbar = () => {
                   height={4}
                   className={
                     activeDropdown === nav.label
-                      ? "rotate-180 duration-300"
-                      : "duration-300"
+                      ? "rotate-180 duration-200"
+                      : "duration-200"
                   }
                 />
               </button>
@@ -80,16 +81,10 @@ const Navbar = () => {
         <div className="hidden md:flex">
           <CustomButton className="min-w-[130px] p-[14px] text-12 gap-8 font-semibold leading-none tracking-[0.24px]" />
         </div>
-        <div className="md:hidden">
-          <Image
-            src="/assets/navbar/menu.svg"
-            alt="menu"
-            onClick={handleMobileView}
-            width={30}
-            height={30}
-          />
-          {menu && <MobileNavbar />}
-        </div>
+        <div className="md:hidden" onClick={handleMobileView}>
+          <HamburgerMenu />
+        </div>{" "}
+        {menu && <MobileNavbar />}
       </div>
     </div>
   );

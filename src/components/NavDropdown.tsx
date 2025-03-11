@@ -1,27 +1,51 @@
 "use client";
 
 import type React from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { NavDropdownProps } from "@/types";
+import type { NavDropdownProps } from "@/types";
 
 const NavDropdown: React.FC<NavDropdownProps> = ({ items }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // Set a small timeout to ensure the component is fully rendered before animating
+    const timer = setTimeout(() => setMounted(true), 50);
+    return () => clearTimeout(timer);
+  }, []);
+
   if (!items || items.length === 0) {
     return null;
   }
 
   return (
-    <div className="absolute top-[40px] left-0 bg-navar_bg shadow-lg rounded-xl py-4  w-max  z-50 justify-between items-center">
-      {items.map((item) => (
+    <div
+      className={`absolute top-[40px] left-0 bg-navar_bg shadow-lg rounded-xl py-4 w-max z-50 justify-between items-center transition-all duration-300 ease-out
+        ${mounted ? "opacity-100 translate-x-0" : "opacity-0 -translate-y-4"}`}
+    >
+      {items.map((item, index) => (
         <Link
           key={item.title}
           href={item.href}
           target="_blank"
-          className="flex gap-1 px-4 py-3 hover:bg-gray-500/20 justify-between  max-w-[390px]  "
+          className={`flex gap-1 px-4 py-3 hover:bg-gray-500/20 justify-between max-w-[390px] transition-all duration-300 ease-out
+            ${
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
+          style={{
+            transitionDelay: `${index * 100}ms`,
+          }}
         >
           <div className="flex gap-5 items-center">
             {item.icon && (
-              <Image src={item.icon} alt="icons" width={20} height={20} />
+              <Image
+                src={item.icon || "/placeholder.svg"}
+                alt="icons"
+                width={20}
+                height={20}
+                className="w-[20px] h-[20px]"
+              />
             )}
             <div className="flex flex-col">
               <span className="text-white-50 leading-tight font-inter text-base font-medium">

@@ -25,14 +25,14 @@ export default function Blockchains() {
 
   return (
     <section ref={ref} className="relative py-10 px-4 sm:px-6 md:px-8   ">
-      <div className="max-w-[1440px] mx-auto relative   ">
+      <div className="max-w-[1440px] mx-auto    ">
         {" "}
         <Image
           src={Background}
           alt="bg"
-          className="absolute blur-lg -top-2/3 start-32 opacity-95 shrink-0 w-auto h-auto"
-          width={1000}
-          height={1000}
+          className="absolute blur-lg  bottom-1 start-32 opacity-95 shrink-0 w-auto h-auto"
+          width={338}
+          height={1800}
         />
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-lightgray to-transparent my-10" />
         <motion.h1
@@ -59,7 +59,6 @@ export default function Blockchains() {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-8 gap-y-16">
               {allBlockchains.map((chain, index) => {
-                // Skip rendering for null items (empty columns in last row)
                 if (chain === null) {
                   return (
                     <div

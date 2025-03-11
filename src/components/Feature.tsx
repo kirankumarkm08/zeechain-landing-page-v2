@@ -82,7 +82,7 @@ function Features() {
         className="  absolute  rotate-180  top-32 end-0 blur-lg shrink-0"
       />
 
-      <h1 className="text-center  mb-12 text-24 sm:text-3xl md:text-24 lg:text-40  font-semibold bg-Section-title-gradient bg-clip-text text-transparent font-display leading-166  tracking-wide  relative">
+      <h1 className="text-center my-10 text-24 sm:text-3xl md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide">
         Features of ZEE Chain
       </h1>
 

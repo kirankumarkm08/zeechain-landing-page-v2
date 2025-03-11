@@ -5,8 +5,6 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import LeftEllipse from "/public/assets/background-assets/left_Ellipse.svg";
-// import Ellipse from "/public/assets/background-assets/Eclipse.svg";
-import Rectangle from "/public/assets/background-assets/Rectangle.svg";
 import { zeechain } from "@/constants";
 import { cardVariants } from "./Animations/Why_zee";
 
@@ -24,24 +22,28 @@ const Whyzee = () => {
   }, [controls, inView]);
 
   return (
-    <div className="relative">
-      {/* <Image
-        src={Ellipse}
-        alt="Background Ellipse"
-        className="absolute left-1/4 -top-10"
-      /> */}
-      <Image
-        src={Rectangle}
-        alt="Background Rectangle"
-        className="absolute blur-lg left-1/4 -top-10"
-      />
-      <Image
-        src={LeftEllipse}
-        alt="Background Left Ellipse"
-        className="absolute top-1/2 start-0"
-      />
+    <div className="relative  ">
+      <div className="absolute inset-0  pointer-events-none">
+        <div className="relative w-full h-full">
+          <Image
+            src="/assets/background-assets/bg-gradient-img.svg"
+            alt="Background Ellipse"
+            className="absolute  blur-lg w-full  hidden "
+            width={100}
+            height={100}
+          />
+
+          <Image
+            src={LeftEllipse || "/placeholder.svg"}
+            alt="Background Left Ellipse"
+            className="absolute top-1/2 -translate-y-1/2 left-0 w-auto max-w-xs"
+            style={{ height: "auto", width: "auto" }}
+            priority
+          />
+        </div>
+      </div>
       <div className="  mx-auto max-w-[1440px] relative  my-20 ">
-        <h1 className="text-center  text-24 md:text-40 my-5 font-semibold bg-Section-title-gradient bg-clip-text text-transparent font-display leading-166 tracking-wide">
+        <h1 className="text-center my-10 text-24 sm:text-3xl md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide">
           Why ZEE Chain?
         </h1>
         <div

@@ -4,7 +4,6 @@
 
 body {
   font-style: normal;
-
   background-color: #09090a;
 }
 
@@ -18,7 +17,7 @@ body::before {
   background-image: url("/assets/background-assets/Noise & Texture.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 0.2;
   z-index: -1;
   mix-blend-mode: plus-darker;
   overflow: hidden;

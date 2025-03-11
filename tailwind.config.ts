@@ -121,6 +121,7 @@ export default {
         ellipse: "url('/assets/background-assets/Ellipse.svg')",
         footer_mesh: "url('/assets/background-assets/footer_grafient.svg')",
         hero_background: "url('/assets/background-assets/Ellipses_bg.svg')",
+        zee_background: "url('/assets/background-assets/bg-gradient-img.svg')",
       },
       backgroundColor: {
         card_background: "#09090A",
