@@ -55,7 +55,7 @@ const BentoCard = ({
   return (
     <motion.div
       className={cn(
-        "group relative flex flex-col  bg-card_background bg-fixed rounded-2xl border border-purple-400 transition-all duration-300",
+        "group relative flex flex-col  bg-card_background bg-fixed rounded-2xl border border-purple-400 transition-all duration-300 overflow-hidden",
         className
       )}
       {...props}

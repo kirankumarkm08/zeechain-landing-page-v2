@@ -4,7 +4,7 @@ import FooterSection from "@/components/FooterSection";
 
 const Footer = () => {
   return (
-    <footer className=" md:py-12 md:px-10 relative    ">
+    <footer className=" md:py-12 px-5 md:px-10 relative    ">
       <div className="md:flex items-center  max-w-[1440px]   mx-auto ">
         <div className="flex ">
           <div className="border-b lg:border-b-0 lg:border-r  border-lightgray pr-20 ">
