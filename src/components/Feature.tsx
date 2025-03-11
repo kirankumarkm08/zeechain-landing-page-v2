@@ -3,7 +3,7 @@
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import Image from "next/image";
 import { features } from "@/constants";
-import { featuresArray } from "@/types";
+// import { featuresArray } from "@/types";
 
 function Features() {
   // const features: featuresArray[] = [
