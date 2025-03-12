@@ -7,6 +7,7 @@ import CustomButton from "./Register-Btn";
 import { heroAnimations } from "@/components/Animations/Hero_Animation";
 // import { DECORATIVE_ELEMENTS } from "@/constants";
 import { DECORATIVE_ELEMENT } from "@/types";
+import LaftGradient from "/public/assets/background-assets/hero_left_bg.svg";
 
 const Hero = () => {
   const DECORATIVE_ELEMENTS: DECORATIVE_ELEMENT[] = [
@@ -108,9 +109,9 @@ const Hero = () => {
     <section className="w-full font-display relative bg-hero_background bg-cover bg-center bg-no-repeat ">
       <div className="absolute inset-0 top-0 pointer-events-none">
         <Image
-          src="/assets/background-assets/hero_left_bg.svg"
+          src={LaftGradient}
           alt="Decorative background element"
-          className="top-0 start-0 blur-lg w-auto h-auto"
+          className="-top-10 start-0 blur-lg w-auto h-auto"
           width={500}
           height={100}
         />
