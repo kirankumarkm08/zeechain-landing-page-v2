@@ -12,7 +12,7 @@ interface BentoCardProps extends Omit<HTMLMotionProps<"div">, "className"> {
   name: string;
   className: string;
   background: string;
-  textPosition?: "top-left" | "top-right" | "bottom" | "middle";
+  textPosition?: string;
   index: number;
 }
 

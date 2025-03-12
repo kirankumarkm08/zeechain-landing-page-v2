@@ -31,8 +31,8 @@ export default function Blockchains() {
           src={Background}
           alt="bg"
           className="absolute blur-lg  bottom-1 start-32 opacity-95 shrink-0 w-auto h-auto"
-          width={338}
-          height={1800}
+          width={100}
+          height={100}
         />
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-lightgray to-transparent my-10" />
         <motion.h1

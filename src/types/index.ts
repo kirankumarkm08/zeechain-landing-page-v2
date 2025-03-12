@@ -27,7 +27,7 @@ export interface featuresArray {
   name: string;
   background: string;
   className: string;
-  textPosition: "top-left" | "top-right" | "bottom" | "middle";
+  textPosition: string;
 }
 
 export interface Blockchain {
@@ -61,3 +61,11 @@ export type DECORATIVE_ELEMENT = {
 export interface NavDropdownProps {
   items: DropdownItem[];
 }
+
+export type BentoCardProps = {
+  name: string;
+  background: string;
+  textPosition: "top-left" | "bottom" | "middle"; // Adjust as needed
+  className?: string; // Make className optional
+  // other properties...
+};
