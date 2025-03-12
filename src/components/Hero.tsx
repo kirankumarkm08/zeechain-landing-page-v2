@@ -108,11 +108,11 @@ const Hero = () => {
   return (
     <section className="w-full font-display relative bg-hero_background bg-cover bg-center bg-no-repeat ">
       <div className="absolute inset-0 top-0 pointer-events-none">
-        <Image
-          src={LaftGradient}
+        <img
+          src={"/assets/background-assets/hero_left_bg.svg"}
           alt="Decorative background element"
           className="-top-10 start-0 blur-lg w-auto h-auto"
-          width={500}
+          width={100}
           height={100}
         />
         {DECORATIVE_ELEMENTS.map((element, index) => (
