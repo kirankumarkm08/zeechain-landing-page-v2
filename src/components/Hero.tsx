@@ -7,7 +7,6 @@ import CustomButton from "./Register-Btn";
 import { heroAnimations } from "@/components/Animations/Hero_Animation";
 // import { DECORATIVE_ELEMENTS } from "@/constants";
 import { DECORATIVE_ELEMENT } from "@/types";
-import LaftGradient from "/public/assets/background-assets/hero_left_bg.svg";
 
 const Hero = () => {
   const DECORATIVE_ELEMENTS: DECORATIVE_ELEMENT[] = [
