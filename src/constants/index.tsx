@@ -15,38 +15,38 @@ export const navLinks: NavLink[] = [
     icon: Arrow_down,
     dropdownItems: [
       {
-        icon: "/assets/navbar/Icons/Exchange.svg",
+        icon: "/assets/navbar/Products/Exchange.svg",
         title: "Exchange ",
         href: "https://app.zeroswap.io/swap",
         description:
           "Bridge assets across chains with zero fee and gasless transactions",
       },
       {
-        icon: "/assets/navbar/Icons/Stake.svg",
+        icon: "/assets/navbar/Products/Stake.svg",
         title: "Stacking ",
         href: "https://app.zeroswap.io/staking",
         description: "Stake to earn rewards and participate in ZeeDO",
       },
       {
-        icon: "/assets/navbar/Icons/Bridge.svg",
+        icon: "/assets/navbar/Products/Bridge.svg",
         title: "Bridge  ",
         href: "https://app.zeroswap.io/staking",
         description: "Bi-directional bridge between ZEE token on multichain",
       },
       {
-        icon: "/assets/navbar/Icons/ZeeDO.svg",
+        icon: "/assets/navbar/Products/ZeeDO.svg",
         title: "ZeeDo ",
         href: "https://zeedo.zeroswap.io/",
         description: "Simple anad Fair Dex Token offering",
       },
       {
-        icon: "/assets/navbar/Icons/Prediction.svg",
+        icon: "/assets/navbar/Products/Prediction.svg",
         title: "Predictions ",
         href: "https://predictions.zeroswap.io/",
         description: "Predict future without losing money ",
       },
       {
-        icon: "/assets/navbar/Icons/Test_drive.svg",
+        icon: "/assets/navbar/Products/Test_drive.svg",
         title: "test Drive ",
         href: "https://testdrive.zeroswap.io/",
         description: "Try out our Incentivizes testnets",
@@ -58,28 +58,27 @@ export const navLinks: NavLink[] = [
     icon: Arrow_down,
     dropdownItems: [
       {
-        icon: "",
+        icon: "/assets/navbar/Socials/telegram.svg",
         title: "Telegram",
         href: "https://t.me/zeroswap",
       },
       {
-        icon: "",
-
+        icon: "/assets/navbar/Socials/X.svg",
         title: "Twitter",
         href: "https://twitter.com/ZeroSwapLabs",
       },
       {
-        icon: "",
+        icon: "/assets/navbar/Socials/Discord.svg",
         title: "Discord",
         href: "https://discord.com/invite/nVW9sq9XSQ",
       },
       {
-        icon: "",
+        icon: "/assets/navbar/Socials/Medium.svg",
         title: "Medium",
         href: "https://medium.com/zeroswaplabs",
       },
       {
-        icon: "",
+        icon: "/assets/navbar/Socials/Reddit.svg",
         title: "Reddit",
         href: "https://www.reddit.com/r/ZeroSwapLabs/",
       },
@@ -90,14 +89,43 @@ export const navLinks: NavLink[] = [
     icon: Arrow_down,
     dropdownItems: [
       {
-        title: "",
+        icon: "/assets/navbar/Resources/Tokenomics.svg",
+        title: "Tokenomics",
         href: "",
-        description: "Learn about our company",
+        description:
+          "$Zee economic model: distribution, supply, mechanisms and utility",
       },
       {
-        title: "",
+        icon: "/assets/navbar/Resources/Documents.svg",
+        title: "Documentation",
         href: "",
-        description: "",
+        description: "Comprehensive guide and resources of Zee Chain",
+      },
+      {
+        icon: "/assets/navbar/Resources/BrandHub.svg",
+        title: "Brand Hub",
+        href: "",
+        description: "Zee Chains branding resources",
+      },
+      {
+        icon: "/assets/navbar/Resources/WhitePaper.svg",
+        title: "Zee Chain Whitepaper",
+        href: "",
+        description:
+          "Know about zee chain’s foundational principles, architecture and vision ",
+      },
+      {
+        icon: "/assets/navbar/Resources/CommunityHub.svg",
+        title: "Zee Chain Community Hub",
+        href: "",
+        description:
+          "A collaborative space for ideas, proposals and community engagement",
+      },
+      {
+        icon: "/assets/navbar/Resources/FAQ.svg",
+        title: "FAQs",
+        href: "",
+        description: "Find answers to platform related queries",
       },
     ],
   },

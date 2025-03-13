@@ -122,6 +122,7 @@ export default {
         footer_mesh: "url('/assets/background-assets/footer_grafient.svg')",
         hero_background: "url('/assets/background-assets/Ellipses_bg.svg')",
         zee_background: "url('/assets/background-assets/bg-gradient-img.svg')",
+        navtitle: "linear-gradient(107deg, #FFC56F 13.43%, #B66C37 55.18%)",
       },
       backgroundColor: {
         card_background: "#09090A",

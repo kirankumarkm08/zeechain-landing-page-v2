@@ -45,18 +45,22 @@ const Navbar = () => {
       <div className="max-w-[1440px] mx-auto flex justify-between  items-center  h-[60px] px-5 ">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/assets/zeechain-logo.svg"
+            src="/assets/navbar/Zeechain-Logo/Logo2.svg"
             alt="logo"
             width={200}
             height={100}
-            className="bg-transparent"
+            className="bg-transparent mix-blend-difference"
           />
         </Link>
         <nav className="hidden md:flex gap-[25px]" ref={dropdownRef}>
           {navLinks.map((nav) => (
             <div key={nav.label} className="relative group">
               <button
-                className="text-white-500 flex items-center justify-center gap-2 text-14 font-inter font-medium leading-loose transition-all duration-300"
+                className={`flex items-center justify-center gap-2 text-14 font-inter font-medium leading-loose transition-all duration-300 ${
+                  activeDropdown === nav.label
+                    ? "bg-navtitle bg-clip-text text-transparent"
+                    : "text-white-500"
+                }`}
                 onClick={() => toggleDropdown(nav.label)}
               >
                 {nav.label}
@@ -65,11 +69,11 @@ const Navbar = () => {
                   alt={nav.label}
                   width={7}
                   height={4}
-                  className={
+                  className={`${
                     activeDropdown === nav.label
-                      ? "rotate-180 duration-200"
+                      ? "rotate-180 duration-200 "
                       : "duration-200"
-                  }
+                  } w-auto h-auto`}
                 />
               </button>
               {activeDropdown === nav.label && nav.dropdownItems && (

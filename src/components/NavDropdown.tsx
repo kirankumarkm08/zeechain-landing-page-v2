@@ -31,29 +31,25 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ items }) => {
           target="_blank"
           className={`flex    gap-y-1 px-4 py-3 hover:bg-gray-500/20 justify-between max-w-[390px] transition-all duration-300 ease-out
             ${
-              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              mounted ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-4"
             }`}
           style={{
-            transitionDelay: `${index * 100}ms`,
+            transitionDelay: `${index * 50}ms`,
           }}
         >
-          <div className="flex gap-5  ">
+          <div className="flex gap-5 items-center  ">
             {item.icon && (
               <Image
                 src={item.icon}
                 alt="icons"
-                width={20}
-                height={20}
-                className="w-[20px] h-[20px] mt-2"
+                width={30}
+                height={30}
+                className="w-auto  h-auto  "
               />
             )}
-            <div className="flex flex-col">
-              <span className="text-white-50 leading-tight font-inter text-base font-medium">
-                {item.title}
-              </span>
-              <span className="text-white-50/80 leading-tight font-inter text-sm font-normal">
-                {item.description}
-              </span>
+            <div className="flex flex-col leading-tight font-inter text-base font-medium">
+              <span className={`text-white-50 `}>{item.title}</span>
+              <span className="text-white-800 ">{item.description}</span>
             </div>
           </div>
         </Link>
