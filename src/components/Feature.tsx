@@ -80,7 +80,7 @@ function Features() {
         height={100}
       />
       <Image
-        src={"/assets/background-assets/hero_left_bg.svg"}
+        src={"public/assets/background-assets/Hero_left_bg.svg"}
         alt="bg"
         width={100}
         height={100}

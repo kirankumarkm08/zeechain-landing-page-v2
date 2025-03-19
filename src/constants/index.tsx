@@ -200,7 +200,7 @@ export const blockchains: Blockchain[] = [
     link: "https://ethereum.org/en/",
   },
   {
-    icon: "assets/Blockchain-logo/polygon.svg",
+    icon: "/assets/Blockchain-logo/polygon.svg",
     label: "Polygon",
     link: "https://polygon.technology/",
   },
@@ -210,17 +210,17 @@ export const blockchains: Blockchain[] = [
     link: "https://www.bnbchain.org/en",
   },
   {
-    icon: "/assets/Blockchain-logo/base.svg",
+    icon: "/assets/Blockchain-logo/Base.svg",
     label: "Base",
     link: "https://www.base.org/",
   },
   {
-    icon: "/assets/Blockchain-logo/mantle.svg",
+    icon: "/assets/Blockchain-logo/Mantle.svg",
     label: "Mantle",
     link: "https://www.mantle.xyz/",
   },
   {
-    icon: "/assets/Blockchain-logo/scroll.svg",
+    icon: "/assets/Blockchain-logo/Scroll.svg",
     label: "Scroll",
     link: "https://scroll.io/",
   },
@@ -235,12 +235,12 @@ export const blockchains: Blockchain[] = [
     link: "https://www.optimism.io/",
   },
   {
-    icon: "/assets/Blockchain-logo/linea.svg",
+    icon: "/assets/Blockchain-logo/Linea.svg",
     label: "Linea",
     link: "https://linea.build/",
   },
   {
-    icon: "/assets/Blockchain-logo/bitcoin.svg",
+    icon: "/assets/Blockchain-logo/Bitcoin.svg",
     label: "Bitcoin",
     link: "https://bitcoin.org/en/",
   },
@@ -262,7 +262,7 @@ export const lastRowBlockchains: Blockchain[] = [
     link: "https://thorchain.org/",
   },
   {
-    icon: "/assets/Blockchain-logo/avalanche.svg",
+    icon: "/assets/Blockchain-logo/Avalanche.svg",
     label: "Avalanche",
     link: "https://www.avax.network/",
   },
