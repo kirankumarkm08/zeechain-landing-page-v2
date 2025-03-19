@@ -80,11 +80,11 @@ function Features() {
         height={100}
       />
       <Image
-        src={"public/assets/background-assets/Hero_left_bg.svg"}
+        src={"/assets/background-assets/Hero_left_bg.svg"}
         alt="bg"
         width={100}
         height={100}
-        className="absolute rotate-180 top-32 end-0 blur-lg shrink-0 w-auto h-auto"
+        className="absolute rotate-180 bottom-10 end-0 blur-lg shrink-0 w-auto h-auto"
       />
 
       {/* <h1 className="text-center mb-12 text-2xl md:text-2xl lg:text-4xl font-semibold bg-Section-title-gradient bg-clip-text text-transparent font-display leading-tight tracking-wide relative">

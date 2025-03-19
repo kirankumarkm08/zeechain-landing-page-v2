@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="border-b lg:border-b-0 lg:border-r pb-5 border-lightgray pr-20 ">
             <div className="flex items-center ">
               <Image
-                src="/assets/navbar/zeechain-Logo/Logo2.svg"
+                src="/assets/navbar/Zeechain-Logo/Logo2.svg"
                 alt="ZEE Chain Logo"
                 width={200}
                 height={100}

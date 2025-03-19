@@ -31,13 +31,6 @@ const BackgroundDecorations = () => (
   <div className="absolute inset-0 pointer-events-none">
     <div className="relative w-full h-full">
       <Image
-        src="/assets/background-assets/bg-gradient-img.svg"
-        alt="Decorative gradient"
-        className="absolute blur-lg w-full hidden"
-        width={100}
-        height={100}
-      />
-      <Image
         src={LeftEllipse}
         alt="Decorative ellipse"
         className="absolute top-1/2 left-0 w-auto h-auto max-w-xs"
