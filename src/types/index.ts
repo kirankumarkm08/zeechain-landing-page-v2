@@ -32,7 +32,8 @@ export interface featuresArray {
 
 export interface Blockchain {
   icon: string | StaticImageData;
-  label: string;
+  label?: string;
+  link: string;
 }
 
 export interface Zeechain {

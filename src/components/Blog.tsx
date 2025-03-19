@@ -7,7 +7,7 @@ import Arrow from "/public/assets/Blog/Arrow_right.svg";
 import Sphare from "/public/assets/background-assets/sphere.svg";
 import { Blogs } from "@/constants";
 
-const Get_started = () => {
+const Blog = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -34,7 +34,7 @@ const Get_started = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className=" rounded-3xl mx-2 border border-pink-500 p-[24px]  bg-card_background flex flex-col items-center gap-7 leading-30 line-extra-tight"
+            className=" rounded-3xl mx-2 sm:mx-16 md:mx-2 border border-pink-500 p-[24px]  bg-card_background flex flex-col items-center gap-7 leading-30 line-extra-tight"
           >
             <Image
               src={blog.image}
@@ -71,4 +71,4 @@ const Get_started = () => {
   );
 };
 
-export default Get_started;
+export default Blog;

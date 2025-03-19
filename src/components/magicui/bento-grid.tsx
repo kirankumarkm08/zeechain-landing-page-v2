@@ -32,7 +32,6 @@ const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
 
 const BentoCard = ({
   name,
-  index,
   className,
   background,
   textPosition = "top-left",
@@ -81,13 +80,8 @@ const BentoCard = ({
       >
         <motion.h3
           className={`text-24 font-clash font-medium  bg-linear-gradient bg-clip-text text-transparent 
-             ${
-               index === 1
-                 ? "w-[300px]"
-                 : index === 5
-                 ? "w-[300px]"
-                 : "min-w-[258px]"
-             }`}
+           
+             `}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeOut" }}
@@ -101,9 +95,7 @@ const BentoCard = ({
         initial={{ opacity: 0, scale: 0.95 }}
         whileHover={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.2, ease: "easeOut" }}
-      >
-        <div className="h-px flex-1 bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
-      </motion.div>
+      ></motion.div>
     </motion.div>
   );
 };

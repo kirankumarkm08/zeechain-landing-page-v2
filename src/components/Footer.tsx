@@ -5,15 +5,17 @@ import FooterSection from "@/components/FooterSection";
 const Footer = () => {
   return (
     <footer className=" md:py-12 px-5 md:px-10 relative my-10   ">
-      <div className="md:flex items-center  max-w-[1440px]   mx-auto ">
+      <div className="lg:flex items-center  max-w-[1440px]   mx-auto ">
         <div className="flex ">
           <div className="border-b lg:border-b-0 lg:border-r pb-5 border-lightgray pr-20 ">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center ">
               <Image
-                src={"/assets/zeechain-logo.svg"}
+                src="/assets/navbar/Zeechain-Logo/Logo2.svg"
                 alt="ZEE Chain Logo"
                 width={200}
                 height={100}
+                priority
+                className="w-[150px] md:w-[180px] lg:w-[200px] h-auto py-4 md:py-5 transition-all duration-300 hover:opacity-90"
               />
             </div>
             <p className="text-white-500  max-w-lg  text-start  font-inter font-normal">

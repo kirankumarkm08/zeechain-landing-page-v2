@@ -46,10 +46,11 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/assets/navbar/Zeechain-Logo/Logo2.svg"
-            alt="logo"
+            alt="ZEE Chain Logo"
             width={200}
             height={100}
-            className="bg-transparent mix-blend-difference"
+            priority
+            className="w-[150px] md:w-[180px] lg:w-[200px] h-auto py-4 md:py-5 transition-all duration-300 hover:opacity-90"
           />
         </Link>
         <nav className="hidden md:flex gap-[25px]" ref={dropdownRef}>
@@ -71,8 +72,8 @@ const Navbar = () => {
                   height={4}
                   className={`${
                     activeDropdown === nav.label
-                      ? "rotate-180 duration-200 "
-                      : "duration-200"
+                      ? "rotate-180 duration-500  "
+                      : "duration-500 transition-all"
                   } w-auto h-auto`}
                 />
               </button>

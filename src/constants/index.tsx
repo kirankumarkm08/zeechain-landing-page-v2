@@ -190,86 +190,144 @@ export const Community: FooterLinks[] = [
 
 export const blockchains: Blockchain[] = [
   {
-    icon: "/assets/Blockchain-logos/solana.svg",
+    icon: "/assets/Blockchain-logo/Solana.svg",
     label: "Solana",
+    link: "https://solana.com/",
   },
-  { icon: "/assets/Blockchain-logos/Ethereum.svg", label: "Ethereum" },
-  { icon: "assets/Blockchain-logos/polygon.svg", label: "Polygon" },
-  { icon: "/assets/Blockchain-logos/BNB.svg", label: "BNB CHAIN" },
-  { icon: "/assets/Blockchain-logos/base.svg", label: "Base" },
-  { icon: "/assets/Blockchain-logos/mantle.svg", label: "Mantle" },
-  { icon: "/assets/Blockchain-logos/mantle.svg", label: "Scroll" },
-  { icon: "/assets/Blockchain-logos/arbitrum.svg", label: "Arbitrum" },
-  { icon: "/assets/Blockchain-logos/optimism.svg", label: "Optimism" },
-  { icon: "/assets/Blockchain-logos/linea.svg", label: "Linea" },
-  { icon: "/assets/Blockchain-logos/bitcoin.svg", label: "Bitcoin" },
-  { icon: "/assets/Blockchain-logos/Stacks.svg", label: "Stacks" },
+  {
+    icon: "/assets/Blockchain-logo/Ethereum.svg",
+    label: "Ethereum",
+    link: "https://ethereum.org/en/",
+  },
+  {
+    icon: "assets/Blockchain-logo/polygon.svg",
+    label: "Polygon",
+    link: "https://polygon.technology/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/BNB.svg",
+    label: "BNB CHAIN",
+    link: "https://www.bnbchain.org/en",
+  },
+  {
+    icon: "/assets/Blockchain-logo/base.svg",
+    label: "Base",
+    link: "https://www.base.org/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/mantle.svg",
+    label: "Mantle",
+    link: "https://www.mantle.xyz/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/scroll.svg",
+    label: "Scroll",
+    link: "https://scroll.io/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/Arbitrum.svg",
+    label: "Arbitrum",
+    link: "https://arbitrum.io/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/OP.svg",
+    label: "Optimism",
+    link: "https://www.optimism.io/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/linea.svg",
+    label: "Linea",
+    link: "https://linea.build/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/bitcoin.svg",
+    label: "Bitcoin",
+    link: "https://bitcoin.org/en/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/Stacks.svg",
+    label: "Stacks",
+    link: "https://www.stacks.co/",
+  },
 ];
 export const lastRowBlockchains: Blockchain[] = [
-  { icon: "/assets/Blockchain-logos/Citra.svg", label: "Citra" },
   {
-    icon: "/assets/Blockchain-logos/Thorchain.svg",
-    label: "Thor-chain",
+    icon: "/assets/Blockchain-logo/Citra.svg",
+    label: "Citra",
+    link: "https://citrea.xyz/",
   },
-  { icon: "/assets/Blockchain-logos/avalanche.svg", label: "Avalanche" },
-  { icon: "/assets/Blockchain-logos/Manta.svg", label: "Manta" },
+  {
+    icon: "/assets/Blockchain-logo/Thorchain.svg",
+    label: "Thor-chain",
+    link: "https://thorchain.org/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/avalanche.svg",
+    label: "Avalanche",
+    link: "https://www.avax.network/",
+  },
+  {
+    icon: "/assets/Blockchain-logo/Manta.svg",
+    label: "Manta",
+    link: "https://manta.network/",
+  },
 ];
 
-export const features: featuresArray[] = [
+export const featuresData: featuresArray[] = [
   {
     name: "100% Gas-less Protocol",
     background: "/assets/Features/Card1.svg",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-1 row-span-3 col-start-1 md:col-start-1 lg:col-start-1 lg:row-start-1 lg:row-end-3",
+      "col-span-2 lg:col-span-3  row-span-3   col-start-1 lg:col-start-1 lg:col-end-1 lg:row-end-3",
     textPosition: "top-left",
   },
   {
     name: "AI powered personalised learning about DeFi",
     background: "/assets/Features/Card2.svg",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-1 row-span-2 col-start-1 md:col-start-2 lg:col-start-2 lg:row-start-1 lg:row-end-3",
+      "col-span-2 lg:col-span-3  row-span-2 col-start-1  lg:col-start-2 lg:col-end-2 lg:-row-start-2 lg:row-end-2",
     textPosition: "bottom",
   },
   {
     name: "Smarter Yield Optimization",
     background: "/assets/Features/Card3.svg",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-1 row-span-2 col-start-1 md:col-start-1 lg:col-start-3 lg:row-start-1 lg:row-end-3",
+      "col-span-2 md:col-span-3  row-span-1 col-start-1 row-span-4 lg:col-start-3  lg:col-end-3 lg:-row-start-2 lg:row-end-3",
     textPosition: "top-left",
   },
   {
     name: "Predictive Market Analytics",
     background: "/assets/Features/Card6.svg",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-1 row-span-3 col-start-1 md:col-start-2 lg:col-start-1 lg:row-start-3 lg:row-end-5",
+      " col-span-2 md:col-span-3  row-span-3 lg:col-start-1 lg:col-end-2 lg:row-start-3",
     textPosition: "top-left",
   },
   {
     name: "AI Managed Interoperability",
     background: "/assets/Features/Card4.svg",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-1 row-span-3 col-start-1 md:col-start-1 lg:col-start-2 lg:row-start-3 lg:row-end-5",
+      "col-span-2 md:col-span-3 row-span-3 lg:col-start-2 lg:col-end-2 lg:row-start-4 lg:row-end-2",
     textPosition: "top-left",
   },
   {
     name: "AI Driven Trading Bots",
     background: "/assets/Features/Card5.svg",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-1 row-span-2 col-start-1 md:col-start-2 lg:col-start-3 lg:row-start-3 lg:row-end-4",
+      " col-span-2 md:col-span-3   row-span-2 lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-3",
     textPosition: "middle",
   },
   {
     name: "AI Powered DAO Governance",
     background: "/assets/Features/Card7.svg",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-1 row-span-2 col-start-1 md:col-start-1 lg:col-start-2 lg:row-start-5 lg:row-end-7",
+      "col-span-2 md:col-span-3 row-span-3  lg:col-start-2 lg:col-end-3 lg:row-start-6 lg:row-end-4",
     textPosition: "top-left",
   },
   {
     name: "Cross Chain Liquidity Hub",
     background: "/assets/Features/Card8.svg",
     className:
-      "col-span-1 md:col-span-1 lg:col-span-1 row-span-2 col-start-1 md:col-start-2 lg:col-start-3 lg:row-start-4 lg:row-end-6",
+      "col-span-2 md:col-span-3 row-span-3 lg:col-start-3 lg:col-end-4 lg:row-start-4 lg:row-end-6",
     textPosition: "bottom",
   },
 ];

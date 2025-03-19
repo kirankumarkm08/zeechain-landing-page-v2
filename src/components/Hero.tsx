@@ -107,7 +107,7 @@ const Hero = () => {
   return (
     <section className="w-full font-display relative bg-hero_background bg-cover bg-center bg-no-repeat ">
       <div className="absolute inset-0 top-0 pointer-events-none">
-        <img
+        <Image
           src={"/assets/background-assets/hero_left_bg.svg"}
           alt="Decorative background element"
           className="-top-10 start-0 blur-lg w-auto h-auto"

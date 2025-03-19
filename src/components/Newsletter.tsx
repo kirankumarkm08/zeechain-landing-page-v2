@@ -3,8 +3,8 @@
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { subscribeToNewsletter } from "@/app/actions/Newsletter";
+import { SendIcon } from "lucide-react";
 import Image from "next/image";
-import Send from "/public/assets/send.svg";
 
 function SubmitButton() {
   const { pending } = useFormStatus();
@@ -19,14 +19,8 @@ function SubmitButton() {
         <div className="w-4 h-4 border-2 border-white-300 border-t-transparent rounded-full animate-spin" />
       ) : (
         <>
-          <Image
-            src={Send}
-            alt="send image"
-            className="md:hidden   "
-            width={20}
-            height={20}
-          />
-          <span className="hidden md:inline ">Subscribe Now</span>
+          <SendIcon className="md:hidden w-5 h-5 text-white" />
+          <span className="hidden md:inline  ">Subscribe</span>
         </>
       )}
     </button>
@@ -35,7 +29,7 @@ function SubmitButton() {
 
 const initialState = {
   success: false,
-  message: "",
+  message: ``,
 };
 
 const Newsletter = () => {

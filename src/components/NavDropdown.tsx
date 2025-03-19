@@ -8,6 +8,7 @@ import type { NavDropdownProps } from "@/types";
 
 const NavDropdown: React.FC<NavDropdownProps> = ({ items }) => {
   const [mounted, setMounted] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   useEffect(() => {
     // Set a small timeout to ensure the component is fully rendered before animating
@@ -22,7 +23,7 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ items }) => {
   return (
     <div
       className={`absolute top-[40px]  bg-navar_bg shadow-lg rounded-xl py-4 w-max z-50 justify-between items-center transition-all duration-300 ease-out
-        ${mounted ? "opacity-100 translate-x-0" : "opacity-0 -translate-y-4"}`}
+        ${mounted ? "opacity-100 translate-x-0 " : "opacity-0 -translate-y-4"}`}
     >
       {items.map((item, index) => (
         <Link
@@ -31,11 +32,13 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ items }) => {
           target="_blank"
           className={`flex    gap-y-1 px-4 py-3 hover:bg-gray-500/20 justify-between max-w-[390px] transition-all duration-300 ease-out
             ${
-              mounted ? "opacity-100 translate-y-0 " : "opacity-0 translate-y-4"
+              mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           style={{
             transitionDelay: `${index * 50}ms`,
           }}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
         >
           <div className="flex gap-5 items-center  ">
             {item.icon && (
@@ -48,7 +51,15 @@ const NavDropdown: React.FC<NavDropdownProps> = ({ items }) => {
               />
             )}
             <div className="flex flex-col leading-tight font-inter text-base font-medium">
-              <span className={`text-white-50 `}>{item.title}</span>
+              <span
+                className={`transition-all duration-300 ${
+                  hoveredIndex === index
+                    ? "bg-navtitle bg-clip-text text-transparent "
+                    : "text-white-50"
+                }`}
+              >
+                {item.title}
+              </span>
               <span className="text-white-800 ">{item.description}</span>
             </div>
           </div>

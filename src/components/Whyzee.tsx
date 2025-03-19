@@ -43,9 +43,14 @@ const Whyzee = () => {
         </div>
       </div>
       <div className="  mx-auto max-w-[1440px] relative  my-20 ">
-        <h1 className="text-center my-10 text-24 sm:text-3xl md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-center my-10 text-24 sm:text-3xl md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide"
+        >
           Why ZEE Chain?
-        </h1>
+        </motion.h1>
         <div
           className="grid  lg:grid-cols-2  gap-10  mx-5 md:mx-32 -z-10 justify-center"
           ref={ref}
