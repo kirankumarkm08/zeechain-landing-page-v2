@@ -200,7 +200,7 @@ export const blockchains: Blockchain[] = [
     link: "https://ethereum.org/en/",
   },
   {
-    icon: "/assets/Blockchain-logo/polygon.svg",
+    icon: "/assets/Blockchain-logo/Polygon.svg",
     label: "Polygon",
     link: "https://polygon.technology/",
   },
