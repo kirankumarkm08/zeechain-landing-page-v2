@@ -15,13 +15,9 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/assets/background-assets/Noise & Texture.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  inset: 0;
+  background: url("/assets/background-assets/Noise & Texture.svg") center/cover
+    no-repeat;
   opacity: 0.2;
   z-index: -1;
   mix-blend-mode: plus-darker;

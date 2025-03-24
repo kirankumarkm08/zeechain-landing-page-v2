@@ -91,7 +91,7 @@ export const navLinks: NavLink[] = [
       {
         icon: "/assets/navbar/Resources/Tokenomics.svg",
         title: "Tokenomics",
-        href: "",
+        href: "/tokenomics",
         description:
           "$Zee economic model: distribution, supply, mechanisms and utility",
       },

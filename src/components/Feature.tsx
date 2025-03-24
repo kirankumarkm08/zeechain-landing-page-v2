@@ -98,7 +98,7 @@ function Features() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="text-center my-10 text-24 sm:text-3xl md:text-40 font-semibold bg-text-top-buttom-linear bg-clip-text text-transparent font-display leading-166 tracking-wide"
       >
-        Seamlessly access all Blockchains
+        Features of ZEE Chain
       </motion.h1>
 
       <BentoGrid className="grid grid-cols-2 lg:grid-cols-3 auto-rows-[120px] sm:auto-rows-[120px] md:auto-rows-[170px] gap-5 sm:gap-4 py-5 md:gap-6 max-w-[1400px] mx-auto px-5">

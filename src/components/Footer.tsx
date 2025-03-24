@@ -4,7 +4,7 @@ import FooterSection from "@/components/FooterSection";
 
 const Footer = () => {
   return (
-    <footer className=" md:py-12 px-5 md:px-10 relative my-10   ">
+    <footer className=" md:py-12 px-5 md:px-10 relative    ">
       <div className="lg:flex items-center  max-w-[1440px]   mx-auto ">
         <div className="flex ">
           <div className="border-b lg:border-b-0 lg:border-r pb-5 border-lightgray pr-20 ">
@@ -31,7 +31,7 @@ const Footer = () => {
           <FooterSection title="Community" items={Community} />
         </div>
       </div>
-      <div className="absolute inset-0 -top-1/2 -z-10 ">
+      <div className="absolute inset-0 -top-1/2 -z-10 blur-md ">
         <Image
           src="/assets/background-assets/footer_grafient.svg"
           alt="Background gradient"

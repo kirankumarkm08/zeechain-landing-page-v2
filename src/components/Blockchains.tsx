@@ -30,7 +30,7 @@ export default function Blockchains() {
         <Image
           src={Background}
           alt="bg"
-          className="absolute blur-lg  bottom-1 start-32 opacity-95 shrink-0 w-auto h-auto"
+          className="absolute blur-lg  bottom-1 start-32 opacity-95 shrink-0 w-auto h-auto -z-10"
           priority
         />
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-lightgray to-transparent my-10" />

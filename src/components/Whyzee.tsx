@@ -41,7 +41,7 @@ const BackgroundDecorations = () => (
         alt="bg"
         width={100}
         height={100}
-        className="w-auto h-auto absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-lg"
+        className="w-auto h-auto absolute left-1/2 top-1/2 transform -translate-x-1/2 -z-10 -translate-y-1/2 blur-lg"
       />
     </div>
   </div>
