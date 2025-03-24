@@ -36,6 +36,13 @@ const BackgroundDecorations = () => (
         className="absolute top-1/2 left-0 w-auto h-auto max-w-xs"
         priority
       />
+      <Image
+        src={"/assets/background-assets/bg-gradient-img.svg"}
+        alt="bg"
+        width={100}
+        height={100}
+        className="w-auto h-auto absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 blur-lg"
+      />
     </div>
   </div>
 );
@@ -79,7 +86,7 @@ const WhyZeeChain = () => {
     <section className="relative my-5" aria-labelledby="why-zeechain-title">
       <BackgroundDecorations />
 
-      <div className="mx-auto max-w-[1440px] bg-zee_background bg-center my-20 py-10">
+      <div className="mx-auto max-w-[1440px]  my-20 py-10">
         <motion.h1
           id="why-zeechain-title"
           initial={ANIMATION_CONFIG.title.initial}
